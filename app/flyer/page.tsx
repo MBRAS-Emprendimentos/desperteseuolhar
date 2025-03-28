@@ -139,7 +139,7 @@ export default function FlyerPage() {
                   </li>
                   <li className="flex items-start transform transition-all duration-300 hover:translate-x-1">
                     <span className="inline-block h-5 w-5 rounded-full bg-gradient-to-br from-premium-gold to-premium-warm mr-4 mt-1.5 flex-shrink-0 shadow-[0_2px_4px_rgba(212,175,55,0.3)]"></span>
-                    <span><strong className="text-premium-gold/90 font-normal">Luxo e Inovação:</strong> Encante-se com a exposição de dois carros Ferrari na entrada do evento, símbolos maiores de elegância e exclusividade que refletem o espírito inovador do Arbórea.</span>
+                    <span><strong className="text-premium-gold/90 font-normal">Luxo e Inovação:</strong> Encante-se com a exposição de dois carros Ferrari na entrada do evento, símbolos máximos de tradição, elegância e exclusividade que refletem o espírito inovador do Arbórea.</span>
                   </li>
                 </ul>
               </section>
