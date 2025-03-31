@@ -38,7 +38,7 @@ export function RSVPForm() {
     <form 
       action="https://formspree.io/f/xkgnpgpo" 
       method="POST"
-      className="space-y-8 max-w-lg mx-auto bg-premium-navy-deep/60 p-8 rounded-none border border-premium-gold/20 shadow-xl"
+      className="space-y-8 w-full max-w-lg mx-auto bg-premium-navy-deep/60 p-6 sm:p-8 rounded-none border border-premium-gold/20 shadow-xl"
     >
       <input type="hidden" name="_next" value="/obrigado" />
       <input type="hidden" name="_subject" value="Nova Confirmação de Presença - Desperte Seu Olhar" />
