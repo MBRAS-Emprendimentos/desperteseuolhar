@@ -42,7 +42,7 @@ export default function Home() {
               </div>
             </div>
             <div className="h-8 w-px bg-gradient-to-b from-premium-light via-premium-gold to-premium-light" />
-            <span className="text-xl md:text-2xl font-extralight tracking-[0.15em] pl-3">ARBÓREA VISTA <span className="font-light">JARDIM EUROPA</span></span>
+            <span className="text-xl md:text-2xl font-extralight tracking-[0.18em] text-transparent bg-clip-text bg-gradient-to-r from-premium-gold to-premium-warm pl-3">ARBÓREA</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -275,7 +275,10 @@ export default function Home() {
            
            
               <div className="h-6 w-px bg-gradient-to-b from-premium-light to-premium-gold opacity-70" />
-              <span className="text-lg font-extralight tracking-[0.15em]">ARBÓREA VISTA JARDIM EUROPA</span>
+              <span className="text-lg font-extralight tracking-[0.15em]">
+                <span className="md:hidden">ARBÓREA</span>
+                <span className="hidden md:inline">ARBÓREA VISTA JARDIM EUROPA</span>
+              </span>
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-8">
