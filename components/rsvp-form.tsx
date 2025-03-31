@@ -115,8 +115,8 @@ export function RSVPForm() {
               <SelectValue placeholder="Selecione a data" />
             </SelectTrigger>
             <SelectContent className="bg-premium-navy border-premium-gold/50 text-premium-light">
-              <SelectItem value="Quarta-16/04" className="hover:bg-premium-gold/10 focus:bg-premium-gold/20">Quarta-feira, 16/04 (16h)</SelectItem>
-              <SelectItem value="Sabado-19/04" className="hover:bg-premium-gold/10 focus:bg-premium-gold/20">Sábado, 19/04 (17:30)</SelectItem>
+              <SelectItem value="Quarta-16/04" className="hover:bg-premium-gold/30 data-[highlighted]:bg-premium-gold/40 focus:bg-premium-gold/40 data-[state=checked]:bg-premium-gold/60 transition-colors">Quarta-feira, 16/04 (16h)</SelectItem>
+              <SelectItem value="Sabado-19/04" className="hover:bg-premium-gold/30 data-[highlighted]:bg-premium-gold/40 focus:bg-premium-gold/40 data-[state=checked]:bg-premium-gold/60 transition-colors">Sábado, 19/04 (17:30)</SelectItem>
             </SelectContent>
           </Select>
         </div>
@@ -133,8 +133,8 @@ export function RSVPForm() {
                 <SelectValue placeholder="Número de acompanhantes" />
               </SelectTrigger>
               <SelectContent className="bg-premium-navy border-premium-gold/50 text-premium-light">
-                <SelectItem value="Não" className="hover:bg-premium-gold/10 focus:bg-premium-gold/20">Não</SelectItem>
-                <SelectItem value="Sim (+1)" className="hover:bg-premium-gold/10 focus:bg-premium-gold/20">Sim (+1)</SelectItem>
+                <SelectItem value="Não" className="hover:bg-premium-gold/30 data-[highlighted]:bg-premium-gold/40 focus:bg-premium-gold/40 data-[state=checked]:bg-premium-gold/60 transition-colors">Não</SelectItem>
+                <SelectItem value="Sim (+1)" className="hover:bg-premium-gold/30 data-[highlighted]:bg-premium-gold/40 focus:bg-premium-gold/40 data-[state=checked]:bg-premium-gold/60 transition-colors">Sim (+1)</SelectItem>
               </SelectContent>
             </Select>
         </div>
