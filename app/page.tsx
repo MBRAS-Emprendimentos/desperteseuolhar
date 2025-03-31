@@ -15,31 +15,30 @@ export default function Home() {
       <header className="relative h-screen">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/sao-paulo-sunset.jpg"
+            src="/images/hero-vista.jpg"
             alt="São Paulo Skyline at Sunset"
             fill
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-premium-navy/80 via-premium-navy-deep/70 to-premium-navy-deep/90" />
-          {/* Decorative elements */}
-          <div className="absolute inset-0 opacity-5">
-            <div className="h-full w-full bg-[url('/images/luxury-pattern.png')] bg-repeat opacity-20"></div>
-          </div>
+          {/* Enhanced gradient overlay with multiple layers for depth */}
+          <div className="absolute inset-0 bg-gradient-to-br from-premium-navy/90 via-premium-navy-deep/75 to-premium-navy-deep/95" />
+          <div className="absolute inset-0 bg-black/20" /> {/* Subtle darkening vignette */}
+          <div className="absolute inset-0 shadow-[inset_0_0_100px_rgba(0,0,0,0.5)]" /> {/* Inner shadow for depth */}
         </div>
 
         {/* Navigation */}
         <div className="relative z-10 container mx-auto px-4 md:px-8 py-6 md:py-8 flex justify-between items-center">
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-5 pr-5">
-              <div className="relative transition-transform hover:scale-105 duration-300">
-                <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={50} height={50} className="h-12 w-auto drop-shadow-lg" />
-              </div>
+            <div className="relative transition-transform hover:scale-105 duration-300">
+                <Image src="/images/benx-1.PNG" alt="Benx Logo" width={40} height={40} className="h-10 w-auto drop-shadow-lg" />
+              </div>    
               <div className="relative transition-transform hover:scale-105 duration-300">
                 <Image src="/images/ferrari-1.PNG" alt="Ferrari Logo" width={40} height={40} className="h-10 w-auto drop-shadow-lg" />
               </div>
               <div className="relative transition-transform hover:scale-105 duration-300">
-                <Image src="/images/benx-1.PNG" alt="Benx Logo" width={40} height={40} className="h-10 w-auto drop-shadow-lg" />
+                <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={50} height={50} className="h-12 w-auto drop-shadow-lg" />
               </div>
             </div>
             <div className="h-8 w-px bg-gradient-to-b from-premium-light via-premium-gold to-premium-light" />
@@ -88,14 +87,18 @@ export default function Home() {
               renascimento magnífico do Arbórea Vista Jardim Europa.
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
-              <Button className="bg-gradient-to-r from-premium-gold to-premium-warm hover:from-premium-warm hover:to-premium-gold text-premium-navy-deep rounded-none px-8 py-6 transition-all duration-500 text-sm tracking-widest font-light hover:shadow-[0_5px_15px_rgba(212,175,55,0.3)] transform hover:-translate-y-1">
-                CONFIRMAR PRESENÇA
+              <Button 
+                asChild
+                className="bg-gradient-to-r from-premium-gold to-premium-warm hover:from-premium-warm hover:to-premium-gold text-premium-navy-deep rounded-none px-8 py-6 transition-all duration-500 text-sm tracking-wider font-normal hover:shadow-[0_5px_15px_rgba(212,175,55,0.3)] transform hover:-translate-y-1"
+              >
+                <Link href="#rsvp">CONFIRMAR PRESENÇA</Link>
               </Button>
               <Button
+                asChild
                 variant="outline"
-                className="border-premium-gold text-premium-gold hover:bg-premium-gold/10 hover:text-premium-light rounded-none px-8 py-6 transition-all duration-500 text-sm tracking-widest font-light hover:border-premium-light transform hover:-translate-y-1"
+                className="border-premium-gold text-premium-gold hover:bg-premium-gold/10 hover:text-premium-light rounded-none px-8 py-6 transition-all duration-500 text-sm tracking-wider font-normal hover:border-premium-light transform hover:-translate-y-1"
               >
-                EXPLORAR EVENTO
+                <Link href="#event">EXPLORAR EVENTO</Link>
               </Button>
             </div>
           </div>
@@ -127,25 +130,21 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12">
                 <div className="border-l-2 border-premium-warm pl-5 group hover:border-premium-light transition-all duration-500 transform hover:-translate-y-1 hover:shadow-[5px_5px_30px_rgba(0,0,0,0.15)] py-3 bg-premium-navy-deep/30">
                   <h3 className="text-premium-warm group-hover:text-premium-light text-lg font-normal transition-all duration-300 mb-1">DATA</h3>
-                  <p className="opacity-90 font-extralight">02 de Abril, 2025</p>
+                  <p className="opacity-90 font-extralight">Quarta ou Sábado</p>
                 </div>
                 <div className="border-l-2 border-premium-deep pl-5 group hover:border-premium-light transition-all duration-500 transform hover:-translate-y-1 hover:shadow-[5px_5px_30px_rgba(0,0,0,0.15)] py-3 bg-premium-navy-deep/30">
                   <h3 className="text-premium-deep group-hover:text-premium-light text-lg font-normal transition-all duration-300 mb-1">HORÁRIO</h3>
-                  <p className="opacity-90 font-extralight">17:30 - 00:30</p>
+                  <p className="opacity-90 font-extralight">Á partir das 16:00 ou 17:30</p>
                 </div>
                 <div className="border-l-2 border-premium-gold pl-5 group hover:border-premium-light transition-all duration-500 transform hover:-translate-y-1 hover:shadow-[5px_5px_30px_rgba(0,0,0,0.15)] py-3 bg-premium-navy-deep/30">
                   <h3 className="text-premium-gold group-hover:text-premium-light text-lg font-normal transition-all duration-300 mb-1">LOCAL</h3>
                   <p className="opacity-90 font-extralight">Av 9 de Julho 5229, Rooftop</p>
                 </div>
-                <div className="border-l-2 border-premium-light pl-5 group hover:border-premium-gold transition-all duration-500 transform hover:-translate-y-1 hover:shadow-[5px_5px_30px_rgba(0,0,0,0.15)] py-3 bg-premium-navy-deep/30">
-                  <h3 className="text-premium-light group-hover:text-premium-gold text-lg font-normal transition-all duration-300 mb-1">TRAJE</h3>
-                  <p className="opacity-90 font-extralight">Traje Elegante</p>
-                </div>
               </div>
             </div>
             <div className="relative h-[600px] w-full order-1 md:order-2 overflow-hidden group">
               <Image 
-                src="/images/rooftop-venue.jpg" 
+                src="/images/evento-vista.jpg" 
                 alt="Luxury Rooftop Venue" 
                 fill 
                 className="object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" 
@@ -195,15 +194,12 @@ export default function Home() {
 
       {/* Ferrari Showcase */}
       <section className="py-24 bg-premium-navy relative overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-15">
-          <Image src="/images/ferrari-pattern.jpg" alt="Ferrari Pattern" fill className="object-cover" />
-        </div>
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="flex flex-col md:flex-row items-center gap-16">
             <div className="md:w-1/2 overflow-hidden rounded-sm group">
               <div className="relative">
                 <Image
-                  src="/images/ferrari-showcase.jpg"
+                  src="/images/ferrari-rooftop.jpg"
                   alt="Ferrari Showcase"
                   width={600}
                   height={400}
@@ -218,14 +214,14 @@ export default function Home() {
               </h2>
               <div className="w-24 h-px bg-gradient-to-r from-premium-gold to-premium-warm mb-8"></div>
               <p className="text-lg leading-relaxed opacity-90 mb-6">
-                Encante-se com a exposição de dois carros Ferrari na entrada do evento. Símbolos máximos de elegância e
+                Encante-se com a exposição de dois carros da Ferrari na entrada do evento. Símbolos máximos de tradição elegância e
                 exclusividade que refletem o espírito inovador do Arbórea Vista Jardim Europa.
               </p>
               <p className="text-lg leading-relaxed opacity-90 mb-8">
                 Uma oportunidade única para apreciar de perto estas obras-primas da engenharia italiana, enquanto desfruta
                 de uma vista deslumbrante da metrópole paulistana.
               </p>
-              <Button className="bg-gradient-to-r from-premium-gold to-premium-warm hover:from-premium-warm hover:to-premium-gold text-premium-navy-deep rounded-none px-8 py-4 transition-all duration-500 text-sm tracking-widest font-light hover:shadow-[0_5px_15px_rgba(212,175,55,0.3)]">
+              <Button className="bg-gradient-to-r from-premium-gold to-premium-warm hover:from-premium-warm hover:to-premium-gold text-premium-navy-deep rounded-none px-8 py-4 transition-all duration-500 text-sm tracking-wider font-normal hover:shadow-[0_5px_15px_rgba(212,175,55,0.3)]">
                 SAIBA MAIS
               </Button>
             </div>
@@ -247,9 +243,6 @@ export default function Home() {
 
       {/* RSVP Section */}
       <section id="rsvp" className="py-24 bg-premium-navy-light relative">
-        <div className="absolute inset-0 z-0 opacity-5">
-          <div className="h-full w-full bg-[url('/images/luxury-pattern.png')] bg-repeat opacity-20"></div>
-        </div>
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="max-w-3xl mx-auto bg-premium-navy-deep/90 p-8 md:p-12 border border-premium-gold/30 backdrop-blur-sm">
             <h2 className="text-3xl md:text-4xl font-extralight text-center tracking-wide mb-3">
@@ -270,38 +263,36 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <div className="flex items-center gap-5">
-              <div className="relative transition-transform hover:scale-105 duration-300">
-                <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={30} height={30} className="h-8 w-auto drop-shadow-md" />
+            <div className="relative transition-transform hover:scale-105 duration-300">
+                <Image src="/images/benx-1.PNG" alt="Benx Logo" width={30} height={30} className="h-8 w-auto drop-shadow-md" />
               </div>
               <div className="relative transition-transform hover:scale-105 duration-300">
                 <Image src="/images/ferrari-1.PNG" alt="Ferrari Logo" width={30} height={30} className="h-8 w-auto drop-shadow-md" />
               </div>
               <div className="relative transition-transform hover:scale-105 duration-300">
-                <Image src="/images/benx-1.PNG" alt="Benx Logo" width={30} height={30} className="h-8 w-auto drop-shadow-md" />
+                <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={30} height={30} className="h-8 w-auto drop-shadow-md" />
               </div>
+           
+           
               <div className="h-6 w-px bg-gradient-to-b from-premium-light to-premium-gold opacity-70" />
               <span className="text-lg font-extralight tracking-[0.15em]">ARBÓREA VISTA JARDIM EUROPA</span>
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-8">
-              <Link href="#" className="text-sm uppercase tracking-[0.15em] hover:text-premium-warm transition-colors font-extralight relative group">
+              <Link href="/privacidade" className="text-sm uppercase tracking-[0.15em] hover:text-premium-warm transition-colors font-extralight relative group">
                 Política de Privacidade
                 <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-premium-warm group-hover:w-full transition-all duration-300"></span>
               </Link>
-              <Link href="#" className="text-sm uppercase tracking-[0.15em] hover:text-premium-deep transition-colors font-extralight relative group">
+              <Link href="/termos" className="text-sm uppercase tracking-[0.15em] hover:text-premium-deep transition-colors font-extralight relative group">
                 Termos e Condições
                 <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-premium-deep group-hover:w-full transition-all duration-300"></span>
-              </Link>
-              <Link href="#" className="text-sm uppercase tracking-[0.15em] hover:text-premium-light transition-colors font-extralight relative group">
-                Contato
-                <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-premium-light group-hover:w-full transition-all duration-300"></span>
               </Link>
             </div>
           </div>
           
           <div className="mt-8 pt-8 border-t border-premium-gold/10 text-center">
             <p className="text-sm text-premium-light/60 font-extralight tracking-wider">
-              &copy; 2025 MBRAS • Ferrari • Benx. Todos os direitos reservados.
+              &copy; 2025 Benx • Ferrari • MBRAS. Todos os direitos reservados.
             </p>
           </div>
         </div>

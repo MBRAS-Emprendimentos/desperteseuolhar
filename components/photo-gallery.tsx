@@ -9,27 +9,27 @@ export function PhotoGallery() {
 
   const images = [
     {
-      src: "/images/gallery-1.jpg",
+      src: "https://placehold.co/800x600/A58D6F/FFF?text=Vista+Rooftop",
       alt: "Vista do Rooftop de São Paulo",
     },
     {
-      src: "/images/gallery-2.jpg",
+      src: "https://placehold.co/800x600/A58D6F/FFF?text=Ferrari",
       alt: "Apresentação Ferrari",
     },
     {
-      src: "/images/gallery-3.jpg",
+      src: "https://placehold.co/800x600/A58D6F/FFF?text=Interior",
       alt: "Interior de Luxo",
     },
     {
-      src: "/images/gallery-4.jpg",
+      src: "https://placehold.co/800x600/A58D6F/FFF?text=Gastronomia",
       alt: "Experiência Gastronômica",
     },
     {
-      src: "/images/gallery-5.jpg",
+      src: "https://placehold.co/800x600/A58D6F/FFF?text=Noite",
       alt: "Atmosfera Noturna",
     },
     {
-      src: "/images/gallery-6.jpg",
+      src: "https://placehold.co/800x600/A58D6F/FFF?text=Detalhes",
       alt: "Detalhes Arquitetônicos",
     },
   ]
@@ -44,7 +44,7 @@ export function PhotoGallery() {
             onClick={() => setSelectedImage(index)}
           >
             <Image
-              src={image.src || "/placeholder.svg"}
+              src={image.src}
               alt={image.alt}
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-110"
@@ -71,7 +71,7 @@ export function PhotoGallery() {
 
           <div className="relative w-full max-w-4xl aspect-[16/9]">
             <Image
-              src={images[selectedImage].src || "/placeholder.svg"}
+              src={images[selectedImage].src}
               alt={images[selectedImage].alt}
               fill
               className="object-contain"
@@ -82,4 +82,3 @@ export function PhotoGallery() {
     </>
   )
 }
-

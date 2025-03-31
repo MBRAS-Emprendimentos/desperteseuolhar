@@ -1,13 +1,14 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { Textarea } from "@/components/ui/textarea" 
+import { useRouter } from 'next/navigation' 
 
 export function RSVPForm() {
   const [formState, setFormState] = useState({
@@ -15,144 +16,157 @@ export function RSVPForm() {
     lastName: "",
     email: "",
     phone: "",
-    guests: "1",
-    dietaryRestrictions: "",
+    eventDate: "", 
+    guests: "", 
     agreeToTerms: false,
-    submitted: false,
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // In a real application, you would submit the form data to a server here
-    setFormState((prev) => ({ ...prev, submitted: true }))
-  }
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormState((prev) => ({ ...prev, [name]: value }))
   }
+  
+  const handleSelectChange = (name: string) => (value: string) => {
+    setFormState((prev) => ({ ...prev, [name]: value }))
+  }
 
-  if (formState.submitted) {
-    return (
-      <div className="text-center py-8">
-        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-premium-gold to-premium-warm mx-auto flex items-center justify-center mb-4 shadow-[0_0_15px_rgba(205,138,79,0.3)]">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-8 w-8 text-premium-navy-deep"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-          </svg>
-        </div>
-        <h3 className="text-2xl font-light mb-4">Obrigado!</h3>
-        <p className="opacity-80 mb-6">
-          Sua confirmação foi recebida. MBRAS, Ferrari e Benx agradecem e esperam vê-lo no evento.
-        </p>
-        <p className="text-sm opacity-70">Um e-mail de confirmação foi enviado para <span className="text-premium-light">{formState.email}</span></p>
-      </div>
-    )
+  const handleCheckboxChange = (name: string) => (checked: boolean | 'indeterminate') => {
+    setFormState((prev) => ({ ...prev, [name]: checked as boolean }))
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <form 
+      action="https://formspree.io/f/xkgnpgpo" 
+      method="POST"
+      className="space-y-8 max-w-lg mx-auto bg-premium-navy-deep/60 p-8 rounded-none border border-premium-gold/20 shadow-xl"
+    >
+      <input type="hidden" name="_next" value="/obrigado" />
+      <input type="hidden" name="_subject" value="Nova Confirmação de Presença - Desperte Seu Olhar" />
+
+      <h2 className="text-3xl font-extralight tracking-wide text-center mb-3">
+        CONFIRME SUA <span className="text-transparent bg-gradient-to-r from-premium-gold to-premium-light bg-clip-text font-normal">PRESENÇA</span>
+      </h2>
+      <div className="w-24 h-px bg-gradient-to-r from-premium-gold to-premium-light mx-auto mb-10"></div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div className="space-y-2">
-          <Label htmlFor="firstName" className="text-premium-light">Nome</Label>
-          <Input
-            id="firstName"
-            name="firstName"
+          <Label htmlFor="firstName" className="text-premium-light/80">Nome</Label>
+          <Input 
+            id="firstName" 
+            name="firstName" 
+            placeholder="Seu nome" 
+            required 
             value={formState.firstName}
             onChange={handleChange}
-            required
-            className="bg-premium-navy-deep/50 border-premium-gold/30 focus:border-premium-warm rounded-none focus:ring-premium-light/20 transition-all duration-300"
+            className="bg-premium-navy/50 border-premium-gold/30 focus:border-premium-gold focus:ring-premium-gold text-white placeholder:text-premium-light/50"
           />
         </div>
         <div className="space-y-2">
-          <Label htmlFor="lastName" className="text-premium-light">Sobrenome</Label>
-          <Input
-            id="lastName"
-            name="lastName"
+          <Label htmlFor="lastName" className="text-premium-light/80">Sobrenome</Label>
+          <Input 
+            id="lastName" 
+            name="lastName" 
+            placeholder="Seu sobrenome" 
+            required 
             value={formState.lastName}
             onChange={handleChange}
-            required
-            className="bg-premium-navy-deep/50 border-premium-gold/30 focus:border-premium-warm rounded-none focus:ring-premium-light/20 transition-all duration-300"
+            className="bg-premium-navy/50 border-premium-gold/30 focus:border-premium-gold focus:ring-premium-gold text-white placeholder:text-premium-light/50"
           />
         </div>
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="email" className="text-premium-light">E-mail</Label>
-        <Input
-          id="email"
-          name="email"
-          type="email"
+        <Label htmlFor="email" className="text-premium-light/80">Email</Label>
+        <Input 
+          id="email" 
+          name="email" 
+          type="email" 
+          placeholder="seu@email.com" 
+          required 
           value={formState.email}
           onChange={handleChange}
-          required
-          className="bg-premium-navy-deep/50 border-premium-gold/30 focus:border-premium-warm rounded-none focus:ring-premium-light/20 transition-all duration-300"
+          className="bg-premium-navy/50 border-premium-gold/30 focus:border-premium-gold focus:ring-premium-gold text-white placeholder:text-premium-light/50"
         />
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="phone" className="text-premium-light">Telefone</Label>
-        <Input
-          id="phone"
-          name="phone"
-          type="tel"
+        <Label htmlFor="phone" className="text-premium-light/80">Telefone</Label>
+        <Input 
+          id="phone" 
+          name="phone" 
+          type="tel" 
+          placeholder="(XX) XXXXX-XXXX" 
           value={formState.phone}
           onChange={handleChange}
-          required
-          className="bg-premium-navy-deep/50 border-premium-gold/30 focus:border-premium-warm rounded-none focus:ring-premium-light/20 transition-all duration-300"
+          className="bg-premium-navy/50 border-premium-gold/30 focus:border-premium-gold focus:ring-premium-gold text-white placeholder:text-premium-light/50"
         />
       </div>
-
-      <div className="space-y-2">
-        <Label htmlFor="guests" className="text-premium-light">Número de Convidados</Label>
-        <Select defaultValue="1" onValueChange={(value) => setFormState((prev) => ({ ...prev, guests: value }))}>
-          <SelectTrigger className="bg-premium-navy-deep/50 border-premium-gold/30 focus:border-premium-warm rounded-none text-white">
-            <SelectValue placeholder="Selecione o número de convidados" />
-          </SelectTrigger>
-          <SelectContent className="bg-premium-navy-light border-premium-gold/30">
-            <SelectItem value="1" className="focus:bg-premium-gold/20 focus:text-premium-light">1 Convidado</SelectItem>
-            <SelectItem value="2" className="focus:bg-premium-gold/20 focus:text-premium-light">2 Convidados</SelectItem>
-            <SelectItem value="3" className="focus:bg-premium-gold/20 focus:text-premium-light">3 Convidados</SelectItem>
-            <SelectItem value="4" className="focus:bg-premium-gold/20 focus:text-premium-light">4 Convidados</SelectItem>
-          </SelectContent>
-        </Select>
-      </div>
-
-      <div className="space-y-2">
-        <Label htmlFor="dietaryRestrictions" className="text-premium-light">Restrições Alimentares (Opcional)</Label>
-        <Input
-          id="dietaryRestrictions"
-          name="dietaryRestrictions"
-          value={formState.dietaryRestrictions}
-          onChange={handleChange}
-          className="bg-premium-navy-deep/50 border-premium-gold/30 focus:border-premium-warm rounded-none focus:ring-premium-light/20 transition-all duration-300"
-        />
+      
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="space-y-2">
+          <Label htmlFor="eventDate" className="text-premium-light/80">Prefere qual data?</Label>
+          <Select 
+            name="eventDate" 
+            required
+            value={formState.eventDate}
+            onValueChange={handleSelectChange('eventDate')}
+          >
+            <SelectTrigger className="w-full bg-premium-navy/50 border-premium-gold/30 focus:border-premium-gold focus:ring-premium-gold text-white">
+              <SelectValue placeholder="Selecione a data" />
+            </SelectTrigger>
+            <SelectContent className="bg-premium-navy border-premium-gold/50 text-premium-light">
+              <SelectItem value="Quarta-16/04" className="hover:bg-premium-gold/10 focus:bg-premium-gold/20">Quarta-feira, 16/04 (16h)</SelectItem>
+              <SelectItem value="Sabado-19/04" className="hover:bg-premium-gold/10 focus:bg-premium-gold/20">Sábado, 19/04 (17:30)</SelectItem>
+            </SelectContent>
+          </Select>
+        </div>
+        
+        <div className="space-y-2">
+            <Label htmlFor="guests" className="text-premium-light/80">Levará acompanhante?</Label>
+            <Select 
+              name="guests" 
+              value={formState.guests} 
+              onValueChange={handleSelectChange('guests')}
+              required
+            >
+              <SelectTrigger className="w-full bg-premium-navy/50 border-premium-gold/30 focus:border-premium-gold focus:ring-premium-gold text-white">
+                <SelectValue placeholder="Número de acompanhantes" />
+              </SelectTrigger>
+              <SelectContent className="bg-premium-navy border-premium-gold/50 text-premium-light">
+                <SelectItem value="Não" className="hover:bg-premium-gold/10 focus:bg-premium-gold/20">Não</SelectItem>
+                <SelectItem value="Sim (+1)" className="hover:bg-premium-gold/10 focus:bg-premium-gold/20">Sim (+1)</SelectItem>
+              </SelectContent>
+            </Select>
+        </div>
       </div>
 
       <div className="flex items-center space-x-2">
-        <Checkbox
-          id="agreeToTerms"
-          checked={formState.agreeToTerms}
-          onCheckedChange={(checked) => setFormState((prev) => ({ ...prev, agreeToTerms: checked as boolean }))}
-          required
-          className="border-premium-gold/50 data-[state=checked]:bg-gradient-to-r data-[state=checked]:from-premium-gold data-[state=checked]:to-premium-warm data-[state=checked]:text-premium-navy-deep"
-        />
+        <div className="relative flex items-center">
+          <Checkbox
+            id="agreeToTerms"
+            name="agreeToTerms" 
+            checked={formState.agreeToTerms}
+            onCheckedChange={handleCheckboxChange('agreeToTerms')}
+            required
+            className="border-premium-gold/50 data-[state=checked]:bg-gradient-to-r data-[state=checked]:from-premium-gold data-[state=checked]:to-premium-warm data-[state=checked]:text-premium-navy-deep"
+          />
+          <label
+            htmlFor="agreeToTerms"
+            className="absolute inset-0 cursor-pointer"
+            aria-hidden="true"
+          />
+        </div>
         <label
           htmlFor="agreeToTerms"
-          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-premium-light"
+          className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-premium-light cursor-pointer"
         >
-          Concordo com os termos e condições
+          Concordo com os <a href="/termos" target="_blank" rel="noopener noreferrer" className="underline hover:text-premium-warm transition-colors">termos e condições</a>
         </label>
       </div>
 
       <Button 
         type="submit" 
-        className="w-full bg-gradient-to-r from-premium-deep via-premium-gold to-premium-warm hover:from-premium-warm hover:via-premium-gold hover:to-premium-deep text-premium-navy-deep rounded-none py-6 transition-all duration-300 shadow-[0_4px_12px_rgba(205,138,79,0.25)] hover:shadow-[0_4px_20px_rgba(205,138,79,0.4)]"
+        className="w-full bg-gradient-to-r from-premium-deep via-premium-gold to-premium-warm hover:from-premium-warm hover:via-premium-gold hover:to-premium-deep text-premium-navy-deep rounded-none py-6 transition-all duration-300 shadow-[0_4px_12px_rgba(205,138,79,0.25)] hover:shadow-[0_4px_20px_rgba(205,138,79,0.4)] tracking-wider font-normal"
       >
         CONFIRMAR PRESENÇA
       </Button>

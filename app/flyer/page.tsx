@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function FlyerPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-premium-navy to-premium-navy-deep flex flex-col bg-[url('/images/luxury-pattern.png')] bg-repeat bg-opacity-5">
+    <div className="min-h-screen bg-gradient-to-b from-premium-navy to-premium-navy-deep flex flex-col">
       {/* Navigation bar with back button */}
       <header className="p-4 md:p-6 backdrop-blur-sm bg-premium-navy-deep/40 sticky top-0 z-10 border-b border-premium-gold/10 shadow-md">
         <div className="container mx-auto">
@@ -189,12 +189,12 @@ export default function FlyerPage() {
       <footer className="container mx-auto px-4 py-6 border-t border-premium-gold/30 bg-premium-navy-deep/60 backdrop-blur-sm">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-6">
+          <Image src="/images/benx-1.PNG" alt="Benx Logo" width={30} height={30} className="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
             <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={30} height={30} className="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
             <Image src="/images/ferrari-1.PNG" alt="Ferrari Logo" width={30} height={30} className="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
-            <Image src="/images/benx-1.PNG" alt="Benx Logo" width={30} height={30} className="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
           </div>
           <p className="text-premium-light/70 text-sm font-light tracking-wide">
-            © 2025 MBRAS • Ferrari • Benx
+            2025 Benx • Ferrari • MBRAS
           </p>
         </div>
       </footer>

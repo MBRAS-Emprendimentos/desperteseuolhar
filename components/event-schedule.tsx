@@ -13,12 +13,12 @@ export function EventSchedule() {
       icon: <Music className="h-5 w-5 text-black" />,
       time: "19:00 - 00:30",
       title: "Música Exclusiva",
-      description: "Aproveite uma atmosfera sofisticada e vibrante ao som do renomado DJ Marcelo Ometto.",
+      description: "Aproveite uma atmosfera sofisticada e vibrante ao som dos renomados DJ Marcelo Ometto / Aline Rocha.",
     },
     {
       icon: <Wine className="h-5 w-5 text-black" />,
-      time: "17:30 - 00:30",
-      title: "Catering de Alto Padrão",
+      time: "18:30 - 00:30",
+      title: "Experiência Gastronômica",
       description:
         "Saboreie petiscos gourmet selecionados, que combinam o melhor da culinária paulistana e internacional. Deguste bebidas refrescantes e participe de um brinde especial com champanhe.",
     },
