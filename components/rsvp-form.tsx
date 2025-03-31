@@ -21,32 +21,20 @@ export function RSVPForm() {
     agreeToTerms: false,
   })
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormState((prev) => ({ ...prev, [name]: value }))
-  }
-  
-  const handleSelectChange = (name: string) => (value: string) => {
-    setFormState((prev) => ({ ...prev, [name]: value }))
-  }
-
-  const handleCheckboxChange = (name: string) => (checked: boolean | 'indeterminate') => {
-    setFormState((prev) => ({ ...prev, [name]: checked as boolean }))
-  }
+  // Consolidated change handler
+  const handleFormChange = (name: string, value: string | boolean) => {
+    setFormState((prev) => ({ ...prev, [name]: value }));
+  };
 
   return (
     <form 
       action="https://formspree.io/f/xkgnpgpo" 
       method="POST"
-      className="space-y-8 w-full max-w-lg mx-auto bg-premium-navy-deep/60 p-6 sm:p-8 rounded-none border border-premium-gold/20 shadow-xl"
+      className="space-y-8 w-full max-w-lg mx-auto bg-premium-navy-deep/60 p-2 sm:p-2 rounded-none shadow-xl"
     >
       <input type="hidden" name="_next" value="/obrigado" />
       <input type="hidden" name="_subject" value="Nova Confirmação de Presença - Desperte Seu Olhar" />
 
-      <h2 className="text-3xl font-extralight tracking-wide text-center mb-3">
-        CONFIRME SUA <span className="text-transparent bg-gradient-to-r from-premium-gold to-premium-light bg-clip-text font-normal">PRESENÇA</span>
-      </h2>
-      <div className="w-24 h-px bg-gradient-to-r from-premium-gold to-premium-light mx-auto mb-10"></div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div className="space-y-2">
@@ -57,7 +45,7 @@ export function RSVPForm() {
             placeholder="Seu nome" 
             required 
             value={formState.firstName}
-            onChange={handleChange}
+            onChange={(e) => handleFormChange(e.target.name, e.target.value)}
             className="bg-premium-navy/50 border-premium-gold/30 focus:border-premium-gold focus:ring-premium-gold text-white placeholder:text-premium-light/50"
           />
         </div>
@@ -69,7 +57,7 @@ export function RSVPForm() {
             placeholder="Seu sobrenome" 
             required 
             value={formState.lastName}
-            onChange={handleChange}
+            onChange={(e) => handleFormChange(e.target.name, e.target.value)}
             className="bg-premium-navy/50 border-premium-gold/30 focus:border-premium-gold focus:ring-premium-gold text-white placeholder:text-premium-light/50"
           />
         </div>
@@ -84,7 +72,7 @@ export function RSVPForm() {
           placeholder="seu@email.com" 
           required 
           value={formState.email}
-          onChange={handleChange}
+          onChange={(e) => handleFormChange(e.target.name, e.target.value)}
           className="bg-premium-navy/50 border-premium-gold/30 focus:border-premium-gold focus:ring-premium-gold text-white placeholder:text-premium-light/50"
         />
       </div>
@@ -97,7 +85,7 @@ export function RSVPForm() {
           type="tel" 
           placeholder="(XX) XXXXX-XXXX" 
           value={formState.phone}
-          onChange={handleChange}
+          onChange={(e) => handleFormChange(e.target.name, e.target.value)}
           className="bg-premium-navy/50 border-premium-gold/30 focus:border-premium-gold focus:ring-premium-gold text-white placeholder:text-premium-light/50"
         />
       </div>
@@ -109,7 +97,7 @@ export function RSVPForm() {
             name="eventDate" 
             required
             value={formState.eventDate}
-            onValueChange={handleSelectChange('eventDate')}
+            onValueChange={(value) => handleFormChange('eventDate', value)}
           >
             <SelectTrigger className="w-full bg-premium-navy/50 border-premium-gold/30 focus:border-premium-gold focus:ring-premium-gold text-white">
               <SelectValue placeholder="Selecione a data" />
@@ -126,7 +114,7 @@ export function RSVPForm() {
             <Select 
               name="guests" 
               value={formState.guests} 
-              onValueChange={handleSelectChange('guests')}
+              onValueChange={(value) => handleFormChange('guests', value)}
               required
             >
               <SelectTrigger className="w-full bg-premium-navy/50 border-premium-gold/30 focus:border-premium-gold focus:ring-premium-gold text-white">
@@ -146,7 +134,7 @@ export function RSVPForm() {
             id="agreeToTerms"
             name="agreeToTerms" 
             checked={formState.agreeToTerms}
-            onCheckedChange={handleCheckboxChange('agreeToTerms')}
+            onCheckedChange={(checked) => handleFormChange('agreeToTerms', checked as boolean)}
             required
             className="border-premium-gold/50 data-[state=checked]:bg-gradient-to-r data-[state=checked]:from-premium-gold data-[state=checked]:to-premium-warm data-[state=checked]:text-premium-navy-deep"
           />
