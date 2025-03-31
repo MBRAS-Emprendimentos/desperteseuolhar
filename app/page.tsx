@@ -199,7 +199,7 @@ export default function Home() {
             <div className="md:w-1/2 overflow-hidden rounded-sm group">
               <div className="relative">
                 <Image
-                  src="/images/ferrari-rooftop.jpg"
+                  src="/images/ferrari-rooftop-2.jpg"
                   alt="Ferrari Showcase"
                   width={600}
                   height={400}
