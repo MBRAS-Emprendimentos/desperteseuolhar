@@ -58,7 +58,7 @@ const InvitationPage = () => {
             <p className="text-sm font-light">Reserve<br />a data</p>
           </div>
           <div className="text-right">
-            <p className="text-sm font-light">QUARTA-FEIRA<br />09.04 À PARTIR DA 17:30H</p>
+            <p className="text-sm font-light">QUINTA-FEIRA<br />10.04 À PARTIR DA 17:30H</p>
           </div>
         </div>
         
