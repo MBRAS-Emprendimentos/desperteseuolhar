@@ -77,11 +77,11 @@ const InvitationPage = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            <h2 className="text-sm sm:text-md uppercase tracking-wider text-premium-gold/90 mb-1.5 mb-2 sm:mb-6 font-light letter-spacing-wider pb-4 sm:pb-6">
+            <h2 className="text-sm sm:text-md uppercase tracking-wider text-premium-gold/90 sm:mb-6 font-light letter-spacing-wider">
               Uma Despedida Exclusiva
             </h2>
             <motion.h1
-              className="text-3xl sm:text-5xl font-extralight tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-premium-gold via-premium-light to-premium-warm mb-2 sm:mb-4"
+              className="text-3xl sm:text-5xl font-extralight tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-premium-gold via-premium-light to-premium-warm mb-2 sm:mb-4 pt-8 md:pt-0"
               animate={{ textShadow: isHovered ? "0 0 8px rgba(255,215,0,0.3)" : "0 0 0px rgba(255,215,0,0)" }}
               transition={{ duration: 0.8 }}
             >
@@ -100,13 +100,13 @@ const InvitationPage = () => {
             transition={{ delay: 0.5 }}
             className="my-1 sm:my-0"
           >
-            <p className="text-sm sm:text-lg text-premium-light/90 mb-3 sm:mb-4 leading-relaxed font-light pt-4 sm:pt-6">
+            <p className="text-md md:text-xl text-premium-light/90 mb-3 sm:mb-4 leading-relaxed font-light pt-2 sm:pt-6">
               Vivencie o renascimento da Vista mais incrível de São Paulo
             </p>
           </motion.div>
 
           <motion.div 
-            className="my-2 sm:my-3 flex justify-center items-center"
+            className="my-2 sm:my-3 flex justify-center items-center pt-14 md:pt-6"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
@@ -122,7 +122,7 @@ const InvitationPage = () => {
             </div>
           </motion.div>
 
-          <div className="space-y-2 sm:space-y-3 my-1 sm:my-2 pt-6 sm:pt-8">
+          <div className="space-y-2 sm:space-y-3 my-1 sm:my-2  pt-14 md:pt-6">
             <motion.div 
               className="flex items-center justify-center backdrop-blur-sm py-1 px-3 hover:border-premium-gold/30 transition-colors duration-300"
               initial={{ opacity: 0 }}
@@ -130,7 +130,7 @@ const InvitationPage = () => {
               transition={{ delay: 0.7 }}
             >
               <Calendar className="w-4 sm:w-5 h-4 sm:h-5 mr-2 text-premium-gold" />
-              <p className="text-xs sm:text-base text-premium-light font-medium">
+              <p className="text-sm sm:text-base text-premium-light font-medium">
                 Quinta-feira, 11.04 • 18:30
               </p>
             </motion.div>
@@ -147,15 +147,15 @@ const InvitationPage = () => {
               
               <div className="grid grid-cols-1 gap-3 w-full">
                 <div className="flex flex-col">
-                  <p className="text-xs sm:text-sm font-medium text-premium-light">Carro / Valet:</p>
-                  <p className="text-[10px] sm:text-sm text-premium-light/80">
+                  <p className="text-sm font-medium text-premium-light">Carro / Valet:</p>
+                  <p className="text-sm text-premium-light/80">
                     Rua da Mata 25, Itaim Bibi
                   </p>
                 </div>
                 
                 <div className="flex flex-col">
-                  <p className="text-xs sm:text-sm font-medium text-premium-light">Acesso para Pedestres:</p>
-                  <p className="text-[10px] sm:text-sm text-premium-light/80">
+                  <p className="text-sm font-medium text-premium-light">Acesso para Pedestres:</p>
+                  <p className="text-sm text-premium-light/80">
                     Av. Nove de Julho 5.229, Jardim Europa
                   </p>
                 </div>
