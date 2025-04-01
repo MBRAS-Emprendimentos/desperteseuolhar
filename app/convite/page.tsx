@@ -77,7 +77,7 @@ const InvitationPage = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
           >
-            <h2 className="text-xs sm:text-md uppercase tracking-wider text-premium-gold/90 mb-1.5 mb-2 sm:mb-6 font-light letter-spacing-wider pb-4 sm:pb-6">
+            <h2 className="text-sm sm:text-md uppercase tracking-wider text-premium-gold/90 mb-1.5 mb-2 sm:mb-6 font-light letter-spacing-wider pb-4 sm:pb-6">
               Uma Despedida Exclusiva
             </h2>
             <motion.h1
@@ -149,14 +149,14 @@ const InvitationPage = () => {
                 <div className="flex flex-col">
                   <p className="text-xs sm:text-sm font-medium text-premium-light">Carro / Valet:</p>
                   <p className="text-[10px] sm:text-sm text-premium-light/80">
-                    Rua da Mata 131, Itaim Bibi
+                    Rua da Mata 25, Itaim Bibi
                   </p>
                 </div>
                 
                 <div className="flex flex-col">
                   <p className="text-xs sm:text-sm font-medium text-premium-light">Acesso para Pedestres:</p>
                   <p className="text-[10px] sm:text-sm text-premium-light/80">
-                    Av. Nove de Julho 5229, Jardim Europa
+                    Av. Nove de Julho 5.229, Jardim Europa
                   </p>
                 </div>
               </div>
@@ -173,7 +173,7 @@ const InvitationPage = () => {
           </motion.div>
 
           {/* Partner Logos */}
-          <div className="mt-2 sm:mt-3 opacity-100 transition-all duration-700 delay-1100">
+          <div className="mt-1 sm:mt-3 opacity-100 transition-all duration-700 delay-1100">
             <div className="flex items-center justify-center space-x-4 sm:space-x-6">
               <div className="relative w-16 sm:w-24 h-6 sm:h-10">
                 <Image
