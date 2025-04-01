@@ -111,7 +111,7 @@ const InvitationPage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
           >
-            <div className="relative w-28 sm:w-44 h-10 sm:h-14">
+            <div className="relative w-44 h-20">
               <Image
                 src="/images/arborea-jardimeuropa.png"
                 alt="Arbórea Jardim Europa"
