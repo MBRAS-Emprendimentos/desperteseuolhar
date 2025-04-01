@@ -175,7 +175,7 @@ const InvitationPage = () => {
           {/* Partner Logos */}
           <div className="mt-1 sm:mt-3 opacity-100 transition-all duration-700 delay-1100">
             <div className="flex items-center justify-center space-x-4 sm:space-x-6">
-              <div className="relative w-16 sm:w-24 h-6 sm:h-10">
+              <div className="relative w-16 sm:w-24 h-10 sm:h-10">
                 <Image
                   src="/images/mbras-1.PNG"
                   alt="MBRAS"
@@ -184,7 +184,7 @@ const InvitationPage = () => {
                   className="opacity-80 filter brightness-125"
                 />
               </div>
-              <div className="relative w-16 sm:w-24 h-6 sm:h-10">
+              <div className="relative w-16 sm:w-24 h-10 sm:h-10">
                 <Image
                   src="/images/benx-1.PNG"
                   alt="BenX"
@@ -193,7 +193,7 @@ const InvitationPage = () => {
                   className="opacity-80 filter brightness-125"
                 />
               </div>
-              <div className="relative w-16 sm:w-24 h-6 sm:h-10">
+              <div className="relative w-16 sm:w-24 h-10 sm:h-10">
                 <Image
                   src="/images/ferrari-1.PNG"
                   alt="Ferrari"
