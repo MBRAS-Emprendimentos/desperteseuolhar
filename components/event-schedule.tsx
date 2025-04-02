@@ -4,27 +4,27 @@ export function EventSchedule() {
   const scheduleItems = [
     {
       icon: <Sunset className="h-5 w-5 text-black" />,
-      time: "17:30 - 19:30",
+      time: "18:00 - 19:00",
       title: "Sunset Experience",
       description:
         "Maravilhe-se com o pôr do sol mais encantador da metrópole paulistana, num momento mágico e inspirador.",
     },
     {
       icon: <Music className="h-5 w-5 text-black" />,
-      time: "19:00 - 00:30",
+      time: "20:00 - 01:00",
       title: "Música Exclusiva",
-      description: "Aproveite uma atmosfera sofisticada e vibrante ao som dos renomados DJ Marcelo Ometto / Aline Rocha.",
+      description: "Aproveite uma atmosfera sofisticada e vibrante ao som de renomados DJs",
     },
     {
       icon: <Wine className="h-5 w-5 text-black" />,
-      time: "18:30 - 00:30",
+      time: "19:00 - 00:00",
       title: "Experiência Gastronômica",
       description:
         "Saboreie petiscos gourmet selecionados, que combinam o melhor da culinária paulistana e internacional. Deguste bebidas refrescantes e participe de um brinde especial com champanhe.",
     },
     {
       icon: <Gift className="h-5 w-5 text-black" />,
-      time: "22:00 - 00:30",
+      time: "22:00 - 01:00",
       title: "Lembrança Exclusiva",
       description:
         "Cada convidado receberá uma lembrança personalizada, seja uma foto impressa ou um livreto comemorativo, eternizando a memória desta noite singular.",

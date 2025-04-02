@@ -135,7 +135,7 @@ export default function FlyerPage() {
                   </li>
                   <li className="flex items-start transform transition-all duration-300 hover:translate-x-1">
                     <span className="inline-block h-5 w-5 rounded-full bg-gradient-to-br from-premium-gold to-premium-warm mr-4 mt-1.5 flex-shrink-0 shadow-[0_2px_4px_rgba(212,175,55,0.3)]"></span>
-                    <span><strong className="text-premium-gold/90 font-normal">Música Exclusiva:</strong> Aproveite uma atmosfera sofisticada e vibrante ao som do renomado DJ Marcelo Ometto.</span>
+                    <span><strong className="text-premium-gold/90 font-normal">Música Exclusiva:</strong> Aproveite uma atmosfera sofisticada e vibrante ao som de renomados DJs.</span>
                   </li>
                   <li className="flex items-start transform transition-all duration-300 hover:translate-x-1">
                     <span className="inline-block h-5 w-5 rounded-full bg-gradient-to-br from-premium-gold to-premium-warm mr-4 mt-1.5 flex-shrink-0 shadow-[0_2px_4px_rgba(212,175,55,0.3)]"></span>
