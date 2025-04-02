@@ -35,7 +35,7 @@ export default function Home() {
                 <Image src="/images/benx-1.PNG" alt="Benx Logo" width={40} height={40} className="h-10 w-auto drop-shadow-lg" />
               </div>    
               <div className="relative transition-transform hover:scale-105 duration-300">
-                <Image src="/images/ferrari-1.PNG" alt="Ferrari Logo" width={40} height={40} className="h-10 w-auto drop-shadow-lg" />
+                <Image src="/images/lamborghini.png" alt="Lamborghini Logo" width={40} height={40} className="h-10 w-auto drop-shadow-lg" />
               </div>
               <div className="relative transition-transform hover:scale-105 duration-300">
                 <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={50} height={50} className="h-12 w-auto drop-shadow-lg" />
@@ -122,7 +122,7 @@ export default function Home() {
               <div className="w-24 h-px bg-gradient-to-r from-premium-gold to-premium-light mb-10"></div>
               <p className="text-lg opacity-90 mb-8 leading-relaxed font-extralight">
                 Participe de uma experiência inesquecível ao despedir-se da vista mais inspiradora de São Paulo antes do
-                renascimento magnífico do Arbórea Vista Jardim Europa. Uma colaboração exclusiva entre MBRAS, Ferrari e
+                renascimento magnífico do Arbórea Vista Jardim Europa. Uma colaboração exclusiva entre MBRAS, Lamborghini e
                 Benx proporciona uma noite singular que combina sofisticação, emoção e elegância, homenageando o passado
                 e abrindo caminho para um futuro ainda mais grandioso.
               </p>
@@ -192,7 +192,7 @@ export default function Home() {
         <div className="absolute right-0 top-1/2 -translate-y-1/2 h-48 w-px bg-gradient-to-b from-transparent via-premium-gold/30 to-transparent opacity-70 hidden lg:block"></div>
       </section>
 
-      {/* Ferrari Showcase */}
+      {/* Lamborghini Showcase */}
       <section className="py-24 bg-premium-navy relative overflow-hidden">
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="flex flex-col md:flex-row items-center gap-16">
@@ -200,7 +200,7 @@ export default function Home() {
               <div className="relative">
                 <Image
                   src="/images/ferrari-rooftop-2.jpg"
-                  alt="Ferrari Showcase"
+                  alt="Lamborghini Showcase"
                   width={600}
                   height={400}
                   className="w-full h-auto group-hover:scale-105 transition-transform duration-1000 ease-out"
@@ -214,7 +214,7 @@ export default function Home() {
               </h2>
               <div className="w-24 h-px bg-gradient-to-r from-premium-gold to-premium-warm mb-8"></div>
               <p className="text-lg leading-relaxed opacity-90 mb-6">
-                Encante-se com a exposição de dois carros da Ferrari na entrada do evento. Símbolos máximos de tradição elegância e
+                Encante-se com a exposição de dois carros da Lamborghini na entrada do evento. Símbolos máximos de tradição elegância e
                 exclusividade que refletem o espírito inovador do Arbórea Vista Jardim Europa.
               </p>
               <p className="text-lg leading-relaxed opacity-90 mb-8">
@@ -267,7 +267,7 @@ export default function Home() {
                 <Image src="/images/benx-1.PNG" alt="Benx Logo" width={30} height={30} className="h-8 w-auto drop-shadow-md" />
               </div>
               <div className="relative transition-transform hover:scale-105 duration-300">
-                <Image src="/images/ferrari-1.PNG" alt="Ferrari Logo" width={30} height={30} className="h-8 w-auto drop-shadow-md" />
+                <Image src="/images/lamborghini.png" alt="Lamborghini Logo" width={30} height={30} className="h-8 w-auto drop-shadow-md" />
               </div>
               <div className="relative transition-transform hover:scale-105 duration-300">
                 <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={30} height={30} className="h-8 w-auto drop-shadow-md" />
@@ -295,7 +295,7 @@ export default function Home() {
           
           <div className="mt-8 pt-8 border-t border-premium-gold/10 text-center">
             <p className="text-sm text-premium-light/60 font-extralight tracking-wider">
-              &copy; 2025 Benx • Ferrari • MBRAS. Todos os direitos reservados.
+              &copy; 2025 Benx • Lamborghini • MBRAS. Todos os direitos reservados.
             </p>
           </div>
         </div>

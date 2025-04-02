@@ -13,8 +13,8 @@ export function PhotoGallery() {
       alt: "Vista do Rooftop de São Paulo",
     },
     {
-      src: "https://placehold.co/800x600/A58D6F/FFF?text=Ferrari",
-      alt: "Apresentação Ferrari",
+      src: "https://placehold.co/800x600/A58D6F/FFF?text=Lamborghini",
+      alt: "Apresentação Lamborghini",
     },
     {
       src: "https://placehold.co/800x600/A58D6F/FFF?text=Interior",

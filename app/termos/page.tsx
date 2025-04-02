@@ -39,7 +39,7 @@ export default function TermsPage() {
           <section className="space-y-4">
             <h2 className="text-2xl font-normal text-premium-gold tracking-wider">4. Responsabilidade</h2>
             <p className="opacity-90">
-              A organização do evento (MBRAS, Ferrari, Benx) preza pela segurança e bem-estar de todos os convidados, porém não se responsabiliza por acidentes ou incidentes que ocorram durante o evento que não sejam diretamente causados por negligência comprovada da organização.
+              A organização do evento (MBRAS, Lamborghini, Benx) preza pela segurança e bem-estar de todos os convidados, porém não se responsabiliza por acidentes ou incidentes que ocorram durante o evento que não sejam diretamente causados por negligência comprovada da organização.
             </p>
           </section>
 

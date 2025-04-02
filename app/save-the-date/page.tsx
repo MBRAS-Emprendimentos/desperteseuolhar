@@ -13,7 +13,7 @@ const InvitationPage = () => {
       {/* Full-width image container with no padding or margins */}
       <div className="w-full">
         <img
-          src="/images/savethedate.png"
+          src="/images/savethedate2.png"
           alt="Tropical View"
           className="w-full h-auto"
           style={{ display: 'block' }} // Removes any default spacing
@@ -24,7 +24,7 @@ const InvitationPage = () => {
       <div className="bg-black px-8 pt-0 pb-8 text-center max-w-md w-full">
         {/* Company names
         <h3 className="text-xl mb-6 pt-4">
-          Benx, Ferrari e MBRAS
+          Benx, Lamborghini e MBRAS
         </h3> */}
          {/* DESPERTE SEU OLHAR */}
         <h1 className="text-2xl font-light tracking-wider my-6 uppercase">
@@ -58,7 +58,7 @@ const InvitationPage = () => {
             <p className="text-sm font-light">Reserve<br />a data</p>
           </div>
           <div className="text-right">
-            <p className="text-sm font-light">QUINTA-FEIRA<br />10.04 À PARTIR DA 17:30H</p>
+            <p className="text-sm font-light">QUINTA-FEIRA<br />10.04 À PARTIR DAS 18:00H</p>
           </div>
         </div>
         
@@ -73,7 +73,7 @@ const InvitationPage = () => {
         </div>
         
         {/* Sponsor logos */}
-        <div className="mt-8 flex justify-center items-center space-x-6">
+        <div className="mt-8 flex justify-center items-center space-x-8">
           <div className="relative h-8 w-16">
             <Image
               src="/images/benx-1.PNG"
@@ -83,10 +83,10 @@ const InvitationPage = () => {
               className="brightness-125"
             />
           </div>
-          <div className="relative h-8 w-16">
+          <div className="relative h-12 w-16">
             <Image
-              src="/images/ferrari-1.PNG"
-              alt="Ferrari"
+              src="/images/lamborghini.png"
+              alt="Lamborghini"
               fill
               style={{ objectFit: 'contain' }}
               className="brightness-125"

@@ -44,8 +44,8 @@ export default function FlyerPage() {
             </div>
             <div className="relative h-16 md:h-20 w-auto backdrop-blur-sm bg-premium-navy-light/20 p-3 rounded shadow-lg animate-fadeInScaleDelay1 hover:scale-105 transition-transform duration-300 border border-premium-gold/20">
               <Image 
-                src="/images/ferrari-1.PNG" 
-                alt="Ferrari Logo" 
+                src="/images/lamborghini.png"
+                alt="Lamborghini Logo"
                 width={160} 
                 height={80} 
                 className="h-full w-auto object-contain" 
@@ -91,7 +91,7 @@ export default function FlyerPage() {
                   Participação:
                 </h2>
                 <p className="text-white/90 text-lg md:text-xl leading-relaxed pl-9 font-light tracking-wide">
-                  Previsão de 120 pessoas, das quais 20 do time Ferrari / MBRAS e o restante clientes das empresas
+                  Previsão de 120 pessoas, das quais 20 do time Lamborghini / MBRAS e o restante clientes das empresas
                 </p>
               </div>
             </div>
@@ -100,7 +100,7 @@ export default function FlyerPage() {
               <section className="bg-gradient-to-br from-premium-navy-light/30 to-premium-navy-deep/50 p-8 md:p-10 rounded-md shadow-[0_10px_25px_rgba(10,31,68,0.5),0_2px_8px_rgba(212,175,55,0.15)] backdrop-blur-md border-l-2 border-premium-gold/60 transform transition-all duration-500 hover:border-l-4 hover:border-premium-gold hover:translate-x-1 hover:shadow-[0_15px_30px_rgba(10,31,68,0.6),0_5px_15px_rgba(212,175,55,0.25)]">
                 <h2 className="text-2xl md:text-3xl font-light mb-5 inline-block bg-gradient-to-r from-premium-gold to-premium-warm bg-clip-text text-transparent drop-shadow-sm tracking-wide">Sobre o Evento:</h2>
                 <p className="text-white/95 text-lg md:text-xl leading-relaxed font-light tracking-wide">
-                  Participe de uma experiência inesquecível ao despedir-se da vista mais inspiradora de São Paulo antes do renascimento magnífico do Arbórea Vista Jardim Europa. Uma colaboração exclusiva entre MBRAS, Ferrari e Benx proporciona uma noite singular que combina sofisticação, emoção e elegância, homenageando o passado e abrindo caminho para um futuro ainda mais grandioso.
+                  Participe de uma experiência inesquecível ao despedir-se da vista mais inspiradora de São Paulo antes do renascimento magnífico do Arbórea Vista Jardim Europa. Uma colaboração exclusiva entre MBRAS, Lamborghini e Benx proporciona uma noite singular que combina sofisticação, emoção e elegância, homenageando o passado e abrindo caminho para um futuro ainda mais grandioso.
                 </p>
               </section>
               
@@ -139,7 +139,7 @@ export default function FlyerPage() {
                   </li>
                   <li className="flex items-start transform transition-all duration-300 hover:translate-x-1">
                     <span className="inline-block h-5 w-5 rounded-full bg-gradient-to-br from-premium-gold to-premium-warm mr-4 mt-1.5 flex-shrink-0 shadow-[0_2px_4px_rgba(212,175,55,0.3)]"></span>
-                    <span><strong className="text-premium-gold/90 font-normal">Luxo e Inovação:</strong> Encante-se com a exposição de dois carros Ferrari na entrada do evento, símbolos máximos de tradição, elegância e exclusividade que refletem o espírito inovador do Arbórea.</span>
+                    <span><strong className="text-premium-gold/90 font-normal">Luxo e Inovação:</strong> Encante-se com a exposição de dois carros Lamborghini na entrada do evento, símbolos máximos de tradição, elegância e exclusividade que refletem o espírito inovador do Arbórea.</span>
                   </li>
                 </ul>
               </section>
@@ -191,10 +191,10 @@ export default function FlyerPage() {
           <div className="flex items-center gap-6">
           <Image src="/images/benx-1.PNG" alt="Benx Logo" width={30} height={30} className="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
             <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={30} height={30} className="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
-            <Image src="/images/ferrari-1.PNG" alt="Ferrari Logo" width={30} height={30} className="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/images/lamborghini.png" alt="Lamborghini Logo" width={30} height={30} className="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
           </div>
           <p className="text-premium-light/70 text-sm font-light tracking-wide">
-            2025 Benx • Ferrari • MBRAS
+            2025 Benx • Lamborghini • MBRAS
           </p>
         </div>
       </footer>
