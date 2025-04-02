@@ -33,7 +33,7 @@ export function RSVPForm() {
       className="space-y-8 w-full max-w-lg mx-auto bg-premium-navy-deep/60 p-2 sm:p-2 rounded-none shadow-xl"
     >
       <input type="hidden" name="_next" value="/obrigado" />
-      <input type="hidden" name="_subject" value="Nova Confirmação de Presença - Desperte Seu Olhar" />
+      <input type="hidden" name="_subject" value="Nova Confirmação de Presença - Save The View" />
 
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -90,43 +90,7 @@ export function RSVPForm() {
         />
       </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <div className="space-y-2">
-          <Label htmlFor="eventDate" className="text-premium-light/80">Prefere qual data?</Label>
-          <Select 
-            name="eventDate" 
-            required
-            value={formState.eventDate}
-            onValueChange={(value) => handleFormChange('eventDate', value)}
-          >
-            <SelectTrigger className="w-full bg-premium-navy/50 border-premium-gold/30 focus:border-premium-gold focus:ring-premium-gold text-white">
-              <SelectValue placeholder="Selecione a data" />
-            </SelectTrigger>
-            <SelectContent className="bg-premium-navy border-premium-gold/50 text-premium-light">
-              <SelectItem value="Quarta-16/04" className="hover:bg-premium-gold/30 data-[highlighted]:bg-premium-gold/40 focus:bg-premium-gold/40 data-[state=checked]:bg-premium-gold/60 transition-colors">Quarta-feira, 16/04 (16h)</SelectItem>
-              <SelectItem value="Sabado-19/04" className="hover:bg-premium-gold/30 data-[highlighted]:bg-premium-gold/40 focus:bg-premium-gold/40 data-[state=checked]:bg-premium-gold/60 transition-colors">Sábado, 19/04 (17:30)</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
-        
-        <div className="space-y-2">
-            <Label htmlFor="guests" className="text-premium-light/80">Levará acompanhante?</Label>
-            <Select 
-              name="guests" 
-              value={formState.guests} 
-              onValueChange={(value) => handleFormChange('guests', value)}
-              required
-            >
-              <SelectTrigger className="w-full bg-premium-navy/50 border-premium-gold/30 focus:border-premium-gold focus:ring-premium-gold text-white">
-                <SelectValue placeholder="Número de acompanhantes" />
-              </SelectTrigger>
-              <SelectContent className="bg-premium-navy border-premium-gold/50 text-premium-light">
-                <SelectItem value="Não" className="hover:bg-premium-gold/30 data-[highlighted]:bg-premium-gold/40 focus:bg-premium-gold/40 data-[state=checked]:bg-premium-gold/60 transition-colors">Não</SelectItem>
-                <SelectItem value="Sim (+1)" className="hover:bg-premium-gold/30 data-[highlighted]:bg-premium-gold/40 focus:bg-premium-gold/40 data-[state=checked]:bg-premium-gold/60 transition-colors">Sim (+1)</SelectItem>
-              </SelectContent>
-            </Select>
-        </div>
-      </div>
+     
 
       <div className="flex items-center space-x-2">
         <div className="relative flex items-center">

@@ -130,15 +130,15 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12">
                 <div className="border-l-2 border-premium-warm pl-5 group hover:border-premium-light transition-all duration-500 transform hover:-translate-y-1 hover:shadow-[5px_5px_30px_rgba(0,0,0,0.15)] py-3 bg-premium-navy-deep/30">
                   <h3 className="text-premium-warm group-hover:text-premium-light text-lg font-normal transition-all duration-300 mb-1">DATA</h3>
-                  <p className="opacity-90 font-extralight">Quarta ou Sábado</p>
+                  <p className="opacity-90 font-extralight">10/04 Quinta</p>
                 </div>
                 <div className="border-l-2 border-premium-deep pl-5 group hover:border-premium-light transition-all duration-500 transform hover:-translate-y-1 hover:shadow-[5px_5px_30px_rgba(0,0,0,0.15)] py-3 bg-premium-navy-deep/30">
                   <h3 className="text-premium-deep group-hover:text-premium-light text-lg font-normal transition-all duration-300 mb-1">HORÁRIO</h3>
-                  <p className="opacity-90 font-extralight">Á partir das 16:00 ou 17:30</p>
+                  <p className="opacity-90 font-extralight">Á partir das 18:30</p>
                 </div>
                 <div className="border-l-2 border-premium-gold pl-5 group hover:border-premium-light transition-all duration-500 transform hover:-translate-y-1 hover:shadow-[5px_5px_30px_rgba(0,0,0,0.15)] py-3 bg-premium-navy-deep/30">
                   <h3 className="text-premium-gold group-hover:text-premium-light text-lg font-normal transition-all duration-300 mb-1">LOCAL</h3>
-                  <p className="opacity-90 font-extralight">Av 9 de Julho 5229, Rooftop</p>
+                  <p className="opacity-90 font-extralight">Rua da Mata 25, Jardim Europa, Rooftop</p>
                 </div>
               </div>
             </div>
@@ -199,7 +199,7 @@ export default function Home() {
             <div className="md:w-1/2 overflow-hidden rounded-sm group">
               <div className="relative">
                 <Image
-                  src="/images/ferrari-rooftop-2.jpg"
+                  src="/images/lambo-party.jpg"
                   alt="Lamborghini Showcase"
                   width={600}
                   height={400}
@@ -214,16 +214,14 @@ export default function Home() {
               </h2>
               <div className="w-24 h-px bg-gradient-to-r from-premium-gold to-premium-warm mb-8"></div>
               <p className="text-lg leading-relaxed opacity-90 mb-6">
-                Encante-se com a exposição de dois carros da Lamborghini na entrada do evento. Símbolos máximos de tradição elegância e
+                Encante-se com a exposição de dois carros da Lamborghini no evento. Símbolos máximos de tradição elegância e
                 exclusividade que refletem o espírito inovador do Arbórea Vista Jardim Europa.
               </p>
               <p className="text-lg leading-relaxed opacity-90 mb-8">
                 Uma oportunidade única para apreciar de perto estas obras-primas da engenharia italiana, enquanto desfruta
                 de uma vista deslumbrante da metrópole paulistana.
               </p>
-              <Button className="bg-gradient-to-r from-premium-gold to-premium-warm hover:from-premium-warm hover:to-premium-gold text-premium-navy-deep rounded-none px-8 py-4 transition-all duration-500 text-sm tracking-wider font-normal hover:shadow-[0_5px_15px_rgba(212,175,55,0.3)]">
-                SAIBA MAIS
-              </Button>
+        
             </div>
           </div>
         </div>

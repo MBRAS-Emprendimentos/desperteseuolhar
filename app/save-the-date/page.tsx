@@ -26,7 +26,7 @@ const InvitationPage = () => {
         <h3 className="text-xl mb-6 pt-4">
           Benx, Lamborghini e MBRAS
         </h3> */}
-         {/* DESPERTE SEU OLHAR */}
+         {/* SAVE THE VIEW */}
         <h1 className="text-2xl font-light tracking-wider my-6 uppercase">
           SAVE THE VIEW
         </h1> 

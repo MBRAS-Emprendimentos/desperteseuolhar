@@ -13,7 +13,7 @@ export default function PrivacyPolicyPage() {
         <div className="bg-premium-navy-deep/50 shadow-lg rounded-lg p-8 space-y-8 border border-premium-gold/20">
           <section className="space-y-4">
             <p className="text-lg opacity-90">
-              Esta Política de Privacidade descreve como suas informações pessoais são coletadas, usadas e compartilhadas quando você utiliza nosso site para confirmar presença no evento "Desperte Seu Olhar".
+              Esta Política de Privacidade descreve como suas informações pessoais são coletadas, usadas e compartilhadas quando você utiliza nosso site para confirmar presença no evento "Save The View".
             </p>
           </section>
 

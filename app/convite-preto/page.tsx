@@ -85,7 +85,7 @@ const InvitationPage = () => {
               animate={{ textShadow: isHovered ? "0 0 8px rgba(255,255,255,0.3)" : "0 0 0px rgba(255,255,255,0)" }}
               transition={{ duration: 0.8 }}
             >
-              DESPERTE SEU OLHAR
+              SAVE THE VIEW
             </motion.h1>
             <motion.div
               className="w-16 sm:w-24 h-px bg-gradient-to-r from-transparent via-zinc-400 to-transparent mx-auto mb-4 sm:mb-6"
@@ -131,7 +131,7 @@ const InvitationPage = () => {
             >
               <Calendar className="w-4 sm:w-5 h-4 sm:h-5 mr-2 text-zinc-400" />
               <p className="text-sm sm:text-base text-zinc-100 font-medium">
-                Quinta-feira, 11.04 • 18:30
+                Quinta-feira, 10.04 • 18:30
               </p>
             </motion.div>
 

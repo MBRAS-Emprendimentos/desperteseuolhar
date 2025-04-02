@@ -24,7 +24,7 @@ export default function FlyerPage() {
           {/* Enhanced Header with improved sizing and spacing */}
           <h1 className="mb-6 md:mb-10">
             <span className="block text-5xl md:text-6xl lg:text-7xl font-extralight tracking-wide mb-3 md:mb-5 bg-gradient-to-r from-premium-gold via-premium-warm to-premium-gold bg-clip-text text-transparent drop-shadow-[0_5px_30px_rgba(212,175,55,0.25)] animate-fadeInSlowA">
-              Desperte Seu Olhar
+              Save The View
             </span>
             <span className="block text-3xl md:text-4xl lg:text-5xl font-light text-white/90 tracking-wider animate-fadeInSlowB letter-spacing-wide">
               Uma Despedida Exclusiva
@@ -76,7 +76,7 @@ export default function FlyerPage() {
                   Local:
                 </h2>
                 <p className="text-white/90 text-lg md:text-xl leading-relaxed pl-9 font-light tracking-wide">
-                  Av 9 de Julho 5229, Rooftop do Edifício que dá lugar ao Arbórea Vista Jardim Europa, com vista panorâmica de São Paulo
+                  Rua da Mata 25, Jardim Europa. Rooftop com vista panorâmica de São Paulo
                 </p>
               </div>
               

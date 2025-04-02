@@ -14,7 +14,7 @@ export default function ThankYouPage() {
         </h1>
         
         <p className="text-lg opacity-90 mb-10">
-          Sua presença foi registrada com sucesso para o evento "Desperte Seu Olhar".
+          Sua presença foi registrada com sucesso para o evento "Save The View".
           Estamos ansiosos para recebê-lo nesta experiência exclusiva.
         </p>
 
@@ -25,15 +25,15 @@ export default function ThankYouPage() {
         <div className="space-y-4 text-left max-w-md mx-auto opacity-90">
           <div className="flex items-center gap-3">
             <Calendar className="h-5 w-5 text-premium-gold flex-shrink-0" />
-            <span>Quarta-feira, XX de Abril, Quarta ou Sábado</span>
+            <span>Quinta-feira, 10 de Abril</span>
           </div>
           <div className="flex items-center gap-3">
             <Clock className="h-5 w-5 text-premium-gold flex-shrink-0" />
-            <span>A partir das 16:00 (Sábado) ou 17:30 (Quarta)</span>
+            <span>A partir das 18:30</span>
           </div>
           <div className="flex items-center gap-3">
             <MapPin className="h-5 w-5 text-premium-gold flex-shrink-0" />
-            <span>Av. 9 de Julho, 5229 - Rooftop, Jardim Paulista, São Paulo</span>
+            <span>Rua da Mata 25, Jardim Europa, São Paulo</span>
           </div>
         </div>
 
