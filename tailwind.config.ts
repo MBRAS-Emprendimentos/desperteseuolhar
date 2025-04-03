@@ -74,9 +74,9 @@ const config = {
           warm: "#D4966A", // Warmer rose gold with orange undertones
           deep: "#C87F65", // Deeper rose gold with pink undertones
           light: "#E5A186", // Lighter, champagne-tinted rose gold
-          "navy-light": "#152642", // Lighter variation of navy for gradients
-          "navy-deep": "#08121F", // Deeper variation of navy for shadows
-          navy: "#0D1A2F", // Premium dark navy blue
+          "navy-light": "#222222", // Lighter dark grey
+          "navy-deep": "#000000", // Pure black
+          navy: "#111111", // Very dark grey / near black
         },
         primary: {
           DEFAULT: "#CD8A4F", // Base copper/bronze gold

@@ -5,7 +5,7 @@
 body {
   font-family: var(--font-montserrat), sans-serif;
   font-weight: 300;
-  background-color: #040c17;
+  background-color: #111111; /* Changed from dark blue */
   color: #fff;
 }
 
@@ -56,9 +56,9 @@ body {
     --premium-warm: #D4966A;
     --premium-deep: #C87F65;
     --premium-light: #E5A186;
-    --premium-navy: #0D1A2F;
-    --premium-navy-light: #152642;
-    --premium-navy-deep: #08121F;
+    --premium-navy: #111111; /* Updated to match tailwind.config.ts */
+    --premium-navy-light: #222222; /* Updated to match tailwind.config.ts */
+    --premium-navy-deep: #000000; /* Updated to match tailwind.config.ts */
   }
 
   .dark {

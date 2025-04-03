@@ -22,7 +22,7 @@ export default function Home() {
             priority
           />
           {/* Enhanced gradient overlay with multiple layers for depth */}
-          <div className="absolute inset-0 bg-gradient-to-br from-premium-navy/90 via-premium-navy-deep/75 to-premium-navy-deep/95" />
+          <div className="absolute inset-0 bg-gradient-to-br from-premium-navy/70 via-premium-navy-deep/50 to-premium-navy-deep/75" /> {/* Reduced opacity for lighter overlay */}
           <div className="absolute inset-0 bg-black/20" /> {/* Subtle darkening vignette */}
           <div className="absolute inset-0 shadow-[inset_0_0_100px_rgba(0,0,0,0.5)]" /> {/* Inner shadow for depth */}
         </div>
@@ -35,7 +35,7 @@ export default function Home() {
                 <Image src="/images/benx-1.PNG" alt="Benx Logo" width={40} height={40} className="h-10 w-auto drop-shadow-lg" />
               </div>    
               <div className="relative transition-transform hover:scale-105 duration-300">
-                <Image src="/images/lamborghini.png" alt="Lamborghini Logo" width={40} height={40} className="h-10 w-auto drop-shadow-lg" />
+                <Image src="/images/lamborghini.png" alt="Lamborghini Logo" width={50} height={60} className="h-10 w-auto drop-shadow-lg" />
               </div>
               <div className="relative transition-transform hover:scale-105 duration-300">
                 <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={50} height={50} className="h-12 w-auto drop-shadow-lg" />
@@ -74,8 +74,8 @@ export default function Home() {
           <div className="max-w-2xl">
             <div className="overflow-hidden">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-extralight tracking-wide mb-6 transform transition-transform duration-700 ease-out translate-y-0">
-                DESPERTE SEU
-                <span className="block font-medium bg-gradient-to-r from-premium-deep via-premium-gold to-premium-light bg-clip-text text-transparent drop-shadow-sm pb-1">OLHAR</span>
+                SAVE THE
+                <span className="block font-medium bg-gradient-to-r from-premium-deep via-premium-gold to-premium-light bg-clip-text text-transparent drop-shadow-sm pb-1">VIEW</span>
               </h1>
             </div>
             <div className="overflow-hidden">
@@ -83,8 +83,8 @@ export default function Home() {
             </div>
             <div className="h-px w-24 bg-gradient-to-r from-premium-gold to-premium-warm mb-8"></div>
             <p className="text-lg md:text-xl opacity-90 mb-10 font-extralight leading-relaxed max-w-xl">
-              Participe de uma experiência inesquecível ao despedir-se da vista mais inspiradora de São Paulo antes do
-              renascimento magnífico do Arbórea Vista Jardim Europa.
+            Participe da experiência inesquecível de despedir-se da vista mais inspiradora de São Paulo antes do
+            renascimento magnífico do Arbórea Vista Jardim Europa.
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
               <Button 
@@ -130,7 +130,7 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12">
                 <div className="border-l-2 border-premium-warm pl-5 group hover:border-premium-light transition-all duration-500 transform hover:-translate-y-1 hover:shadow-[5px_5px_30px_rgba(0,0,0,0.15)] py-3 bg-premium-navy-deep/30">
                   <h3 className="text-premium-warm group-hover:text-premium-light text-lg font-normal transition-all duration-300 mb-1">DATA</h3>
-                  <p className="opacity-90 font-extralight">10/04 Quinta</p>
+                  <p className="opacity-90 font-extralight">10/04 Quinta-feira</p>
                 </div>
                 <div className="border-l-2 border-premium-deep pl-5 group hover:border-premium-light transition-all duration-500 transform hover:-translate-y-1 hover:shadow-[5px_5px_30px_rgba(0,0,0,0.15)] py-3 bg-premium-navy-deep/30">
                   <h3 className="text-premium-deep group-hover:text-premium-light text-lg font-normal transition-all duration-300 mb-1">HORÁRIO</h3>
