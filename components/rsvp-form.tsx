@@ -23,7 +23,7 @@ export function RSVPForm() {
   })
 
   const phoneMaskOptions = {
-    mask: '+__ (__) _ ____-____',
+    mask: '(__) _ ____-____',
     replacement: { _: /\d/ },
   }
 
@@ -118,7 +118,7 @@ export function RSVPForm() {
           id="phone" 
           name="phone" 
           type="tel" 
-          placeholder="+(XX) XXXXX-XXXX" 
+          placeholder="(XX) XXXXX-XXXX" 
           value={formState.phone}
           onChange={(e) => handleFormChange(e.target.name, e.target.value)}
           className="bg-premium-navy/50 border-premium-gold/30 focus:border-premium-gold focus:ring-premium-gold text-white placeholder:text-premium-light/50"
