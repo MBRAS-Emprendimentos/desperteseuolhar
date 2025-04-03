@@ -85,7 +85,7 @@ const InvitationPage = () => {
           </div>
           <div className="relative h-12 w-16">
             <Image
-              src="/images/lamborghini.png"
+              src="/images/lambo-sp.png"
               alt="Lamborghini"
               fill
               style={{ objectFit: 'contain' }}

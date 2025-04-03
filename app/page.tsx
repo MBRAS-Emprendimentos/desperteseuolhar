@@ -35,7 +35,7 @@ export default function Home() {
                 <Image src="/images/benx-1.PNG" alt="Benx Logo" width={40} height={40} className="h-10 w-auto drop-shadow-lg" />
               </div>    
               <div className="relative transition-transform hover:scale-105 duration-300">
-                <Image src="/images/lamborghini.png" alt="Lamborghini Logo" width={50} height={60} className="h-10 w-auto drop-shadow-lg" />
+                <Image src="/images/lambo-sp.png" alt="Lamborghini Logo" width={50} height={60} className="h-10 w-auto drop-shadow-lg" />
               </div>
               <div className="relative transition-transform hover:scale-105 duration-300">
                 <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={50} height={50} className="h-12 w-auto drop-shadow-lg" />
@@ -264,7 +264,7 @@ export default function Home() {
                 <Image src="/images/benx-1.PNG" alt="Benx Logo" width={30} height={30} className="h-8 w-auto drop-shadow-md" />
               </div>
               <div className="relative transition-transform hover:scale-105 duration-300">
-                <Image src="/images/lamborghini.png" alt="Lamborghini Logo" width={30} height={30} className="h-8 w-auto drop-shadow-md" />
+                <Image src="/images/lambo-sp.png" alt="Lamborghini Logo" width={30} height={30} className="h-8 w-auto drop-shadow-md" />
               </div>
               <div className="relative transition-transform hover:scale-105 duration-300">
                 <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={30} height={30} className="h-8 w-auto drop-shadow-md" />

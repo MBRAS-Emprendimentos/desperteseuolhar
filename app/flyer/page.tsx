@@ -44,7 +44,7 @@ export default function FlyerPage() {
             </div>
             <div className="relative h-16 md:h-20 w-auto backdrop-blur-sm bg-premium-navy-light/20 p-3 rounded shadow-lg animate-fadeInScaleDelay1 hover:scale-105 transition-transform duration-300 border border-premium-gold/20">
               <Image 
-                src="/images/lamborghini.png"
+                src="/images/lambo-sp.png"
                 alt="Lamborghini Logo"
                 width={160} 
                 height={80} 
@@ -191,7 +191,7 @@ export default function FlyerPage() {
           <div className="flex items-center gap-6">
           <Image src="/images/benx-1.PNG" alt="Benx Logo" width={30} height={30} className="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
             <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={30} height={30} className="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
-            <Image src="/images/lamborghini.png" alt="Lamborghini Logo" width={30} height={30} className="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
+            <Image src="/images/lambo-sp.png" alt="Lamborghini Logo" width={30} height={30} className="h-8 w-auto opacity-80 hover:opacity-100 transition-opacity duration-300" />
           </div>
           <p className="text-premium-light/70 text-sm font-light tracking-wide">
             2025 Benx • Lamborghini • MBRAS
