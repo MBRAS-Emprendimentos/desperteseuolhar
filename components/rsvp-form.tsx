@@ -66,7 +66,7 @@ export function RSVPForm() {
   return (
     <form 
       onSubmit={handleSubmit}
-      className="space-y-8 w-full max-w-lg mx-auto bg-premium-navy-deep/60 p-2 sm:p-2 rounded-none shadow-xl"
+      className="space-y-8 w-full max-w-lg mx-auto bg-transparent p-2 sm:p-2 rounded-none shadow-xl"
     >
       <input type="hidden" name="_next" value="/obrigado" />
 

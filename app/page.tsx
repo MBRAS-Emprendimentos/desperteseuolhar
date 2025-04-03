@@ -116,9 +116,14 @@ export default function Home() {
 
 
       {/* RSVP Section */}
-      <section id="rsvp" className="py-24 bg-premium-navy-light relative">
+      <section id="rsvp" className="py-24 bg-premium-navy-light relative" style={{
+            backgroundImage: "url('/images/back-verde.jpg')",
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center center',
+          }}>
         <div className="container mx-auto px-4 md:px-8 relative">
-          <div className="max-w-3xl mx-auto bg-premium-navy-deep/90 p-8 md:p-12 border border-premium-gold/30 backdrop-blur-sm">
+          <div className="max-w-3xl mx-auto bg-premium-navy-deep/70 p-8 md:p-12 border border-premium-gold/30 backdrop-blur-sm">
             <h2 className="text-3xl md:text-4xl font-extralight text-center tracking-wide mb-3">
               CONFIRME SUA <span className="text-transparent bg-gradient-to-r from-premium-gold to-premium-warm bg-clip-text font-normal">PRESENÇA</span>
             </h2>
