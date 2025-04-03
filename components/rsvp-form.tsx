@@ -1,13 +1,14 @@
 "use client"
 
 import type React from "react"
-import { useState } from "react"
+import { FormEvent, useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea" 
+import {useMask, Mask} from '@react-input/mask'
 import { useRouter } from 'next/navigation' 
 
 export function RSVPForm() {
@@ -21,20 +22,53 @@ export function RSVPForm() {
     agreeToTerms: false,
   })
 
+  const phoneMaskOptions = {
+    mask: '+__ (__) _ ____-____',
+    replacement: { _: /\d/ },
+  }
+
+  const phoneMask = new Mask(phoneMaskOptions)
+
+  const phoneInputRef = useMask(phoneMaskOptions);
+
   // Consolidated change handler
   const handleFormChange = (name: string, value: string | boolean) => {
     setFormState((prev) => ({ ...prev, [name]: value }));
   };
 
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    // Create the merged data
+    const formData = new FormData();
+    formData.append('firstName', formState.firstName);
+    formData.append('lastName', formState.lastName);
+    formData.append('name', `${formState.firstName} ${formState.lastName}`);
+    formData.append('email', formState.email);
+    formData.append('phone', phoneMask.unformat(formState.phone));
+    // formData.append('eventDate', formState.eventDate);
+    // formData.append('guests', formState.guests);
+    formData.append('agreeToTerms', String(formState.agreeToTerms));
+    formData.append('subject', 'Nova Confirmação de Presença - Save The View');
+    
+    // Submit to Formspree
+    fetch("https://formspree.io/f/xkgnpgpo", {
+      method: "POST",
+      body: formData,
+      headers: {
+        "Accept": "application/json"
+      }
+    }).then(() => {
+      window.location.href = "/obrigado";
+    });
+  };
+
   return (
     <form 
-      action="https://formspree.io/f/xkgnpgpo" 
-      method="POST"
+      onSubmit={handleSubmit}
       className="space-y-8 w-full max-w-lg mx-auto bg-premium-navy-deep/60 p-2 sm:p-2 rounded-none shadow-xl"
     >
       <input type="hidden" name="_next" value="/obrigado" />
-      <input type="hidden" name="_subject" value="Nova Confirmação de Presença - Save The View" />
-
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div className="space-y-2">
@@ -79,11 +113,12 @@ export function RSVPForm() {
 
       <div className="space-y-2">
         <Label htmlFor="phone" className="text-premium-light/80">Telefone</Label>
-        <Input 
+        <Input
+          ref={phoneInputRef}
           id="phone" 
           name="phone" 
           type="tel" 
-          placeholder="(XX) XXXXX-XXXX" 
+          placeholder="+(XX) XXXXX-XXXX" 
           value={formState.phone}
           onChange={(e) => handleFormChange(e.target.name, e.target.value)}
           className="bg-premium-navy/50 border-premium-gold/30 focus:border-premium-gold focus:ring-premium-gold text-white placeholder:text-premium-light/50"

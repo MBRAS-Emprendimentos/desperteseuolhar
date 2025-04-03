@@ -35,7 +35,7 @@ export default function Home() {
                 <Image src="/images/benx-1.PNG" alt="Benx Logo" width={40} height={40} className="h-10 w-auto drop-shadow-lg" />
               </div>    
               <div className="relative transition-transform hover:scale-105 duration-300">
-                <Image src="/images/lambo-sp.png" alt="Lamborghini Logo" width={50} height={60} className="h-16 w-auto drop-shadow-lg" />
+                <Image src="/images/lambo-sp.png" alt="Lamborghini Logo" width={50} height={60} className="h-10 w-auto drop-shadow-lg" />
               </div>
               <div className="relative transition-transform hover:scale-105 duration-300">
                 <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={50} height={50} className="h-12 w-auto drop-shadow-lg" />
@@ -47,7 +47,7 @@ export default function Home() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-10">
-            {/* <Link href="#event" className="text-sm uppercase tracking-[0.2em] hover:text-premium-warm transition-colors relative group">
+            <Link href="#event" className="text-sm uppercase tracking-[0.2em] hover:text-premium-warm transition-colors relative group">
               Evento
               <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-gradient-to-r from-premium-gold to-premium-warm group-hover:w-full transition-all duration-300 ease-in-out"></span>
             </Link>
@@ -58,7 +58,7 @@ export default function Home() {
             <Link href="#gallery" className="text-sm uppercase tracking-[0.2em] hover:text-premium-light transition-colors relative group">
               Galeria
               <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-gradient-to-r from-premium-gold to-premium-warm group-hover:w-full transition-all duration-300 ease-in-out"></span>
-            </Link> */}
+            </Link>
             <Link href="#rsvp" className="text-sm uppercase tracking-[0.2em] hover:text-premium-gold transition-colors relative group">
               RSVP
               <span className="absolute -bottom-2 left-0 w-0 h-[1px] bg-gradient-to-r from-premium-gold to-premium-warm group-hover:w-full transition-all duration-300 ease-in-out"></span>
@@ -111,6 +111,132 @@ export default function Home() {
         </div>
       </header>
 
+      {/* Event Details Section */}
+      <section id="event" className="py-24 bg-gradient-to-b from-premium-navy to-premium-navy-light">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div className="order-2 md:order-1">
+              <h2 className="text-3xl md:text-4xl font-extralight tracking-wide mb-3">
+                SOBRE O <span className="text-transparent bg-gradient-to-r from-premium-gold to-premium-light bg-clip-text font-normal">EVENTO</span>
+              </h2>
+              <div className="w-24 h-px bg-gradient-to-r from-premium-gold to-premium-light mb-10"></div>
+              <p className="text-lg opacity-90 mb-8 leading-relaxed font-extralight">
+                Participe de uma experiência inesquecível ao despedir-se da vista mais inspiradora de São Paulo antes do
+                renascimento magnífico do Arbórea Vista Jardim Europa. Uma colaboração exclusiva entre MBRAS, Lamborghini São Paulo e
+                Benx proporciona uma noite singular que combina sofisticação, emoção e elegância, homenageando o passado
+                e abrindo caminho para um futuro ainda mais grandioso.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-12">
+                <div className="border-l-2 border-premium-warm pl-5 group hover:border-premium-light transition-all duration-500 transform hover:-translate-y-1 hover:shadow-[5px_5px_30px_rgba(0,0,0,0.15)] py-3 bg-premium-navy-deep/30">
+                  <h3 className="text-premium-warm group-hover:text-premium-light text-lg font-normal transition-all duration-300 mb-1">DATA</h3>
+                  <p className="opacity-90 font-extralight">10/04 Quinta-feira</p>
+                </div>
+                <div className="border-l-2 border-premium-deep pl-5 group hover:border-premium-light transition-all duration-500 transform hover:-translate-y-1 hover:shadow-[5px_5px_30px_rgba(0,0,0,0.15)] py-3 bg-premium-navy-deep/30">
+                  <h3 className="text-premium-deep group-hover:text-premium-light text-lg font-normal transition-all duration-300 mb-1">HORÁRIO</h3>
+                  <p className="opacity-90 font-extralight">Á partir das 18:30</p>
+                </div>
+                <div className="border-l-2 border-premium-gold pl-5 group hover:border-premium-light transition-all duration-500 transform hover:-translate-y-1 hover:shadow-[5px_5px_30px_rgba(0,0,0,0.15)] py-3 bg-premium-navy-deep/30">
+                  <h3 className="text-premium-gold group-hover:text-premium-light text-lg font-normal transition-all duration-300 mb-1">LOCAL</h3>
+                  <p className="opacity-90 font-extralight">Rua da Mata 25, Jardim Europa, Rooftop</p>
+                </div>
+              </div>
+            </div>
+            <div className="relative h-[600px] w-full order-1 md:order-2 overflow-hidden group">
+              <Image 
+                src="/images/evento-vista.jpg" 
+                alt="Luxury Rooftop Venue" 
+                fill 
+                className="object-cover group-hover:scale-105 transition-transform duration-1000 ease-out" 
+              />
+              <div className="absolute inset-0 bg-premium-navy-deep/30 group-hover:bg-premium-navy-deep/20 transition-all duration-700"></div>
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-premium-navy-deep to-transparent h-1/3"></div>
+              <div className="absolute top-0 left-0 right-0 h-1/4 bg-gradient-to-b from-premium-navy-deep/80 to-transparent"></div>
+              <div className="absolute inset-0 border border-premium-gold/20"></div>
+              <div className="absolute bottom-8 left-8 flex items-center gap-3">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-premium-gold to-premium-warm flex items-center justify-center shadow-lg">
+                  <span className="text-premium-navy-deep font-bold tracking-wide">SP</span>
+                </div>
+                <span className="text-sm uppercase tracking-[0.2em] font-extralight">São Paulo, Brasil</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Details */}
+      <section className="py-24 bg-premium-navy-light relative">
+        <div className="absolute top-0 right-0 w-full h-px bg-gradient-to-r from-transparent via-premium-gold/30 to-transparent"></div>
+        <div className="container mx-auto px-4 md:px-8">
+          <h2 className="text-3xl md:text-4xl font-extralight text-center tracking-wide mb-3">
+            EXPERIÊNCIA <span className="text-transparent bg-gradient-to-r from-premium-warm to-premium-deep bg-clip-text font-normal">EXCLUSIVA</span>
+          </h2>
+          <div className="w-24 h-px bg-gradient-to-r from-premium-warm to-premium-deep mx-auto mb-16"></div>
+
+          <EventDetails />
+        </div>
+        <div className="absolute bottom-0 right-0 w-full h-px bg-gradient-to-r from-transparent via-premium-gold/30 to-transparent"></div>
+      </section>
+
+      {/* Schedule Section */}
+      <section id="schedule" className="py-24 bg-gradient-to-b from-premium-navy-light to-premium-navy relative">
+        <div className="container mx-auto px-4 md:px-8">
+          <h2 className="text-3xl md:text-4xl font-extralight text-center tracking-wide mb-3">
+            PROGRAMAÇÃO <span className="text-transparent bg-gradient-to-r from-premium-deep to-premium-light bg-clip-text font-normal">ESPECIAL</span>
+          </h2>
+          <div className="w-24 h-px bg-gradient-to-r from-premium-deep to-premium-light mx-auto mb-16"></div>
+
+          <EventSchedule />
+        </div>
+        <div className="absolute left-0 top-1/2 -translate-y-1/2 h-48 w-px bg-gradient-to-b from-transparent via-premium-gold/30 to-transparent opacity-70 hidden lg:block"></div>
+        <div className="absolute right-0 top-1/2 -translate-y-1/2 h-48 w-px bg-gradient-to-b from-transparent via-premium-gold/30 to-transparent opacity-70 hidden lg:block"></div>
+      </section>
+
+      {/* Lamborghini Showcase */}
+      <section className="py-24 bg-premium-navy relative overflow-hidden">
+        <div className="container mx-auto px-4 md:px-8 relative z-10">
+          <div className="flex flex-col md:flex-row items-center gap-16">
+            <div className="md:w-1/2 overflow-hidden rounded-sm group">
+              <div className="relative">
+                <Image
+                  src="/images/lambo-party.jpg"
+                  alt="Lamborghini Showcase"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto group-hover:scale-105 transition-transform duration-1000 ease-out"
+                />
+                <div className="absolute inset-0 border border-premium-gold/20 pointer-events-none"></div>
+              </div>
+            </div>
+            <div className="md:w-1/2">
+              <h2 className="text-3xl md:text-4xl font-extralight tracking-wide mb-4">
+                ELEGÂNCIA & <span className="text-transparent bg-gradient-to-r from-premium-gold to-premium-warm bg-clip-text font-normal">EXCLUSIVIDADE</span>
+              </h2>
+              <div className="w-24 h-px bg-gradient-to-r from-premium-gold to-premium-warm mb-8"></div>
+              <p className="text-lg leading-relaxed opacity-90 mb-6">
+                Encante-se com a exposição de dois carros da Lamborghini no evento. Símbolos máximos que refletem o espírito inovador do Arbórea Vista Jardim Europa.
+              </p>
+              <p className="text-lg leading-relaxed opacity-90 mb-8">
+                Uma oportunidade única para apreciar de perto estas obras-primas da engenharia italiana, enquanto desfruta
+                de uma vista deslumbrante da metrópole paulistana.
+              </p>
+        
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Photo Gallery */}
+      <section id="gallery" className="py-24 bg-gradient-to-b from-premium-navy-deep via-premium-navy to-premium-navy-light">
+        <div className="container mx-auto px-4 md:px-8">
+          <h2 className="text-3xl md:text-4xl font-extralight text-center tracking-wide mb-3">
+            GALERIA <span className="text-transparent bg-gradient-to-r from-premium-light to-premium-gold bg-clip-text font-normal">DE FOTOS</span>
+          </h2>
+          <div className="w-24 h-px bg-gradient-to-r from-premium-light to-premium-gold mx-auto mb-16"></div>
+
+          <PhotoGallery />
+        </div>
+      </section>
 
       {/* RSVP Section */}
       <section id="rsvp" className="py-24 bg-premium-navy-light relative">
@@ -138,7 +264,7 @@ export default function Home() {
                 <Image src="/images/benx-1.PNG" alt="Benx Logo" width={30} height={30} className="h-8 w-auto drop-shadow-md" />
               </div>
               <div className="relative transition-transform hover:scale-105 duration-300">
-                <Image src="/images/lambo-sp.png" alt="Lamborghini Logo" width={30} height={30} className="h-12 w-auto drop-shadow-md" />
+                <Image src="/images/lambo-sp.png" alt="Lamborghini Logo" width={30} height={30} className="h-8 w-auto drop-shadow-md" />
               </div>
               <div className="relative transition-transform hover:scale-105 duration-300">
                 <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={30} height={30} className="h-8 w-auto drop-shadow-md" />
@@ -152,7 +278,7 @@ export default function Home() {
               </span>
             </div>
 
-            {/* <div className="flex flex-col sm:flex-row items-center gap-8">
+            <div className="flex flex-col sm:flex-row items-center gap-8">
               <Link href="/privacidade" className="text-sm uppercase tracking-[0.15em] hover:text-premium-warm transition-colors font-extralight relative group">
                 Política de Privacidade
                 <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-premium-warm group-hover:w-full transition-all duration-300"></span>
@@ -161,7 +287,7 @@ export default function Home() {
                 Termos e Condições
                 <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-premium-deep group-hover:w-full transition-all duration-300"></span>
               </Link>
-            </div> */}
+            </div>
           </div>
           
           <div className="mt-8 pt-8 border-t border-premium-gold/10 text-center">
