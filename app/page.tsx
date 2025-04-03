@@ -38,11 +38,11 @@ export default function Home() {
                 <Image src="/images/lambo-sp.png" alt="Lamborghini Logo" width={50} height={60} className="h-16 w-auto drop-shadow-lg" />
               </div>
               <div className="relative transition-transform hover:scale-105 duration-300">
-                <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={50} height={50} className="h-12 w-auto drop-shadow-lg" />
+                <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={60} height={60} className="h-16 w-auto drop-shadow-lg" />
               </div>
-              <div className="relative transition-transform hover:scale-105 duration-300">
+              {/* <div className="relative transition-transform hover:scale-105 duration-300">
                 <Image src="/images/BUENO NETO.png" alt="MBRAS Logo" width={50} height={50} className="h-12 w-auto drop-shadow-lg" />
-              </div>
+              </div> */}
             </div>
             {/* <div className="h-8 w-px bg-gradient-to-b from-premium-light via-premium-gold to-premium-light" /> */}
             {/* <span className="text-xl md:text-2xl font-extralight tracking-[0.18em] text-transparent bg-clip-text bg-gradient-to-r from-premium-gold to-premium-warm pl-3">ARBÓREA</span> */}
@@ -141,11 +141,11 @@ export default function Home() {
                 <Image src="/images/lambo-sp.png" alt="Lamborghini Logo" width={30} height={30} className="h-12 w-auto drop-shadow-md" />
               </div>
               <div className="relative transition-transform hover:scale-105 duration-300">
-                <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={30} height={30} className="h-8 w-auto drop-shadow-md" />
+                <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={40} height={40} className="h-14 w-auto drop-shadow-md" />
               </div>
-              <div className="relative transition-transform hover:scale-105 duration-300">
+              {/* <div className="relative transition-transform hover:scale-105 duration-300">
                 <Image src="/images/BUENO NETO.png" alt="MBRAS Logo" width={50} height={50} className="h-12 w-auto drop-shadow-lg" />
-              </div>
+              </div> */}
            
            
               <div className="h-6 w-px bg-gradient-to-b from-premium-light to-premium-gold opacity-70" />
@@ -174,16 +174,16 @@ export default function Home() {
                 <Image src="/images/lambo-sp.png" alt="Lamborghini Logo" width={30} height={30} className="h-12 w-auto drop-shadow-md" />
               </div>
               <div className="relative transition-transform hover:scale-105 duration-300">
-                <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={30} height={30} className="h-8 w-auto drop-shadow-md" />
+                <Image src="/images/mbras-1.PNG" alt="MBRAS Logo" width={30} height={30} className="h-14 w-auto drop-shadow-md" />
               </div>
-              <div className="relative transition-transform hover:scale-105 duration-300">
+              {/* <div className="relative transition-transform hover:scale-105 duration-300">
                 <Image src="/images/BUENO NETO.png" alt="MBRAS Logo" width={50} height={50} className="h-12 w-auto drop-shadow-lg" />
-              </div>
+              </div> */}
            
            
               <div className="h-6 w-px bg-gradient-to-b from-premium-light to-premium-gold opacity-70" />
               <span className="text-lg font-extralight tracking-[0.15em]">
-                <span className="md:hidden">ARBÓREA</span>
+                {/* <span className="md:hidden">ARBÓREA</span> */}
                 <div className="relative transition-transform hover:scale-105 duration-300">
                   <Image src="/images/ARBÓREA.png" alt="Arbórea" width={50} height={50} className="h-16 w-auto drop-shadow-lg" />
                 </div>
