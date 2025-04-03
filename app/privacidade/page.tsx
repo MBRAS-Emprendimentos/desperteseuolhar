@@ -47,7 +47,7 @@ export default function PrivacyPolicyPage() {
           <section className="space-y-4">
             <h2 className="text-2xl font-normal text-premium-deep tracking-wider">3. Compartilhamento de Informações</h2>
             <p className="opacity-90">
-              Não compartilhamos suas informações pessoais com terceiros, exceto quando necessário para a organização do evento (por exemplo, com a equipe de recepção no local) ou se exigido por lei. Nossos parceiros (MBRAS, Lamborghini, Benx) têm acesso limitado às informações estritamente necessárias para fins de planejamento do evento.
+              Não compartilhamos suas informações pessoais com terceiros, exceto quando necessário para a organização do evento (por exemplo, com a equipe de recepção no local) ou se exigido por lei. Nossos parceiros ( Benx, MBRAS, Lamborghini São Paulo) têm acesso limitado às informações estritamente necessárias para fins de planejamento do evento.
             </p>
           </section>
 

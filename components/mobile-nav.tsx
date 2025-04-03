@@ -67,7 +67,7 @@ export function MobileNav() {
           
           {/* Footer */}
           <div className="p-4 text-center text-premium-light/50 text-sm border-t border-premium-gold/20">
-            <p>2025 Benx • Lamborghini • MBRAS</p>
+            <p>2025 Benx • MBRAS • Lamborghini São Paulo </p>
           </div>
         </div>
       )}

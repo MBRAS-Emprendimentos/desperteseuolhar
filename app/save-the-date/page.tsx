@@ -24,7 +24,7 @@ const InvitationPage = () => {
       <div className="bg-black px-8 pt-0 pb-8 text-center max-w-md w-full">
         {/* Company names
         <h3 className="text-xl mb-6 pt-4">
-          Benx, Lamborghini e MBRAS
+          Benx, Lamborghini São Paulo e MBRAS
         </h3> */}
          {/* SAVE THE VIEW */}
         <h1 className="text-2xl font-light tracking-wider my-6 uppercase">

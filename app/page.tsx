@@ -122,7 +122,7 @@ export default function Home() {
               <div className="w-24 h-px bg-gradient-to-r from-premium-gold to-premium-light mb-10"></div>
               <p className="text-lg opacity-90 mb-8 leading-relaxed font-extralight">
                 Participe de uma experiência inesquecível ao despedir-se da vista mais inspiradora de São Paulo antes do
-                renascimento magnífico do Arbórea Vista Jardim Europa. Uma colaboração exclusiva entre MBRAS, Lamborghini e
+                renascimento magnífico do Arbórea Vista Jardim Europa. Uma colaboração exclusiva entre MBRAS, Lamborghini São Paulo e
                 Benx proporciona uma noite singular que combina sofisticação, emoção e elegância, homenageando o passado
                 e abrindo caminho para um futuro ainda mais grandioso.
               </p>
@@ -214,8 +214,7 @@ export default function Home() {
               </h2>
               <div className="w-24 h-px bg-gradient-to-r from-premium-gold to-premium-warm mb-8"></div>
               <p className="text-lg leading-relaxed opacity-90 mb-6">
-                Encante-se com a exposição de dois carros da Lamborghini no evento. Símbolos máximos de tradição elegância e
-                exclusividade que refletem o espírito inovador do Arbórea Vista Jardim Europa.
+                Encante-se com a exposição de dois carros da Lamborghini no evento. Símbolos máximos que refletem o espírito inovador do Arbórea Vista Jardim Europa.
               </p>
               <p className="text-lg leading-relaxed opacity-90 mb-8">
                 Uma oportunidade única para apreciar de perto estas obras-primas da engenharia italiana, enquanto desfruta
@@ -293,7 +292,7 @@ export default function Home() {
           
           <div className="mt-8 pt-8 border-t border-premium-gold/10 text-center">
             <p className="text-sm text-premium-light/60 font-extralight tracking-wider">
-              &copy; 2025 Benx • Lamborghini • MBRAS. Todos os direitos reservados.
+              &copy; 2025 MBRAS • Benx • Lamborghini São Paulo. Todos os direitos reservados.
             </p>
           </div>
         </div>

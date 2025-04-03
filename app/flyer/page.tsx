@@ -100,7 +100,7 @@ export default function FlyerPage() {
               <section className="bg-gradient-to-br from-premium-navy-light/30 to-premium-navy-deep/50 p-8 md:p-10 rounded-md shadow-[0_10px_25px_rgba(10,31,68,0.5),0_2px_8px_rgba(212,175,55,0.15)] backdrop-blur-md border-l-2 border-premium-gold/60 transform transition-all duration-500 hover:border-l-4 hover:border-premium-gold hover:translate-x-1 hover:shadow-[0_15px_30px_rgba(10,31,68,0.6),0_5px_15px_rgba(212,175,55,0.25)]">
                 <h2 className="text-2xl md:text-3xl font-light mb-5 inline-block bg-gradient-to-r from-premium-gold to-premium-warm bg-clip-text text-transparent drop-shadow-sm tracking-wide">Sobre o Evento:</h2>
                 <p className="text-white/95 text-lg md:text-xl leading-relaxed font-light tracking-wide">
-                  Participe de uma experiência inesquecível ao despedir-se da vista mais inspiradora de São Paulo antes do renascimento magnífico do Arbórea Vista Jardim Europa. Uma colaboração exclusiva entre MBRAS, Lamborghini e Benx proporciona uma noite singular que combina sofisticação, emoção e elegância, homenageando o passado e abrindo caminho para um futuro ainda mais grandioso.
+                  Participe de uma experiência inesquecível ao despedir-se da vista mais inspiradora de São Paulo antes do renascimento magnífico do Arbórea Vista Jardim Europa. Uma colaboração exclusiva entre MBRAS, Lamborghini São Paulo e Benx proporciona uma noite singular que combina sofisticação, emoção e elegância, homenageando o passado e abrindo caminho para um futuro ainda mais grandioso.
                 </p>
               </section>
               
