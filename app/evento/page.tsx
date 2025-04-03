@@ -13,7 +13,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-premium-navy text-white font-light">
       {/* Hero Section */}
       <header className="relative h-screen">
-        <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0">
           <Image
             src="/images/hero-vista.jpg"
             alt="São Paulo Skyline at Sunset"
@@ -28,7 +28,7 @@ export default function Home() {
         </div>
 
         {/* Navigation */}
-        <div className="relative z-10 container mx-auto px-4 md:px-8 py-6 md:py-8 flex justify-between items-center">
+        <div className="relative container mx-auto px-4 md:px-8 py-6 md:py-8 flex justify-between items-center">
           <div className="flex items-center gap-3">
             <div className="flex items-center gap-5 pr-5">
             <div className="relative transition-transform hover:scale-105 duration-300">
@@ -70,7 +70,7 @@ export default function Home() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative z-10 container mx-auto px-4 md:px-8 h-full flex flex-col justify-center">
+        <div className="relative container mx-auto px-4 md:px-8 h-full flex flex-col justify-center">
           <div className="max-w-2xl">
             <div className="overflow-hidden">
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-extralight tracking-wide mb-6 transform transition-transform duration-700 ease-out translate-y-0">
@@ -194,7 +194,7 @@ export default function Home() {
 
       {/* Lamborghini Showcase */}
       <section className="py-24 bg-premium-navy relative overflow-hidden">
-        <div className="container mx-auto px-4 md:px-8 relative z-10">
+        <div className="container mx-auto px-4 md:px-8 relative">
           <div className="flex flex-col md:flex-row items-center gap-16">
             <div className="md:w-1/2 overflow-hidden rounded-sm group">
               <div className="relative">
@@ -240,7 +240,7 @@ export default function Home() {
 
       {/* RSVP Section */}
       <section id="rsvp" className="py-24 bg-premium-navy-light relative">
-        <div className="container mx-auto px-4 md:px-8 relative z-10">
+        <div className="container mx-auto px-4 md:px-8 relative">
           <div className="max-w-3xl mx-auto bg-premium-navy-deep/90 p-8 md:p-12 border border-premium-gold/30 backdrop-blur-sm">
             <h2 className="text-3xl md:text-4xl font-extralight text-center tracking-wide mb-3">
               CONFIRME SUA <span className="text-transparent bg-gradient-to-r from-premium-gold to-premium-warm bg-clip-text font-normal">PRESENÇA</span>

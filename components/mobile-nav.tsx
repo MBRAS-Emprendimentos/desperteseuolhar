@@ -19,7 +19,7 @@ export function MobileNav() {
       </button>
 
       {isOpen && (
-        <div className="fixed inset-0 bg-premium-navy-deep z-50 flex flex-col">
+        <div className="fixed z-10 w-screen h-screen top-0 left-0 !bg-premium-navy-deep flex flex-col">
           {/* Header: Close Button Only */}
           <div className="flex justify-end items-center p-4 border-b border-premium-gold/20 h-[60px]">
             <button 
