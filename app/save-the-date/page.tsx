@@ -1,8 +1,6 @@
 'use client';
 
-import { Phone } from 'lucide-react';
 import Image from 'next/image';
-import { motion } from 'framer-motion';
 
 const InvitationPage = () => {
   return (
@@ -39,7 +37,7 @@ const InvitationPage = () => {
           onde passado e futuro se encontram.
         </p>
         
-        {/* Arbórea logo */}
+        {/* Arbórea logo 
         <div className="mb-8">
           <div className="relative h-16 w-full">
             <Image
@@ -50,7 +48,7 @@ const InvitationPage = () => {
               priority
             />
           </div>
-        </div>
+        </div> */}
         
         {/* Date and time information */}
         <div className="flex justify-between items-center mb-2">

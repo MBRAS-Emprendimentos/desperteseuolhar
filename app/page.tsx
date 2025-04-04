@@ -87,7 +87,7 @@ export default function Home() {
             <div className="h-px w-24 bg-gradient-to-r from-premium-gold to-premium-warm mb-8"></div>
             <p className="text-lg md:text-xl opacity-90 mb-10 font-extralight leading-relaxed max-w-xl">
             Participe da experiência inesquecível de despedir-se da vista mais inspiradora de São Paulo antes do
-            renascimento magnífico do Arbórea Vista Jardim Europa.
+            renascimento magnífico do Vista Jardim Europa.
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
               <Button 
@@ -129,7 +129,7 @@ export default function Home() {
             </h2>
             <div className="w-24 h-px bg-gradient-to-r from-premium-gold to-premium-warm mx-auto mb-8"></div>
             <p className="text-center text-lg mb-10 font-extralight leading-relaxed">
-              Faça parte desta experiência exclusiva que marca a transição do icônico edifício para o novo Arbórea Vista
+              Faça parte desta experiência exclusiva que marca a transição do icônico edifício para o novo Vista
               Jardim Europa.
             </p>
             
@@ -148,13 +148,13 @@ export default function Home() {
               </div> */}
            
            
-              <div className="h-6 w-px bg-gradient-to-b from-premium-light to-premium-gold opacity-70" />
-              <span className="text-lg font-extralight tracking-[0.15em]">
+              {/* <div className="h-6 w-px bg-gradient-to-b from-premium-light to-premium-gold opacity-70" /> */}
+              {/* <span className="text-lg font-extralight tracking-[0.15em]">
                 <span className="md:hidden">ARBÓREA</span>
-                <div className="relative transition-transform hover:scale-105 duration-300">
+                {/* <div className="relative transition-transform hover:scale-105 duration-300">
                   <Image src="/images/ARBÓREA.png" alt="Arbórea" width={50} height={50} className="h-16 w-auto drop-shadow-lg" />
-                </div>
-              </span>
+                </div> 
+              </span> */}
             </div>
 
             <RSVPForm />
@@ -181,25 +181,25 @@ export default function Home() {
               </div> */}
            
            
-              <div className="h-6 w-px bg-gradient-to-b from-premium-light to-premium-gold opacity-70" />
+              {/* <div className="h-6 w-px bg-gradient-to-b from-premium-light to-premium-gold opacity-70" />
               <span className="text-lg font-extralight tracking-[0.15em]">
-                {/* <span className="md:hidden">ARBÓREA</span> */}
+                {/* <span className="md:hidden">ARBÓREA</span> 
                 <div className="relative transition-transform hover:scale-105 duration-300">
                   <Image src="/images/ARBÓREA.png" alt="Arbórea" width={50} height={50} className="h-16 w-auto drop-shadow-lg" />
                 </div>
               </span>
-            </div>
+            </div> 
 
-            {/* <div className="flex flex-col sm:flex-row items-center gap-8">
-              <Link href="/privacidade" className="text-sm uppercase tracking-[0.15em] hover:text-premium-warm transition-colors font-extralight relative group">
+           <div className="flex flex-col sm:flex-row items-center gap-8">
+               <Link href="/privacidade" className="text-sm uppercase tracking-[0.15em] hover:text-premium-warm transition-colors font-extralight relative group">
                 Política de Privacidade
                 <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-premium-warm group-hover:w-full transition-all duration-300"></span>
               </Link>
               <Link href="/termos" className="text-sm uppercase tracking-[0.15em] hover:text-premium-deep transition-colors font-extralight relative group">
                 Termos e Condições
                 <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-premium-deep group-hover:w-full transition-all duration-300"></span>
-              </Link>
-            </div> */}
+              </Link>*/}
+          </div> 
           </div>
           
           <div className="mt-8 pt-8 border-t border-premium-gold/10 text-center">

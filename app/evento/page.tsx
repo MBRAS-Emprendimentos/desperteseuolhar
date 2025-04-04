@@ -84,7 +84,7 @@ export default function Home() {
             <div className="h-px w-24 bg-gradient-to-r from-premium-gold to-premium-warm mb-8"></div>
             <p className="text-lg md:text-xl opacity-90 mb-10 font-extralight leading-relaxed max-w-xl">
             Participe da experiência inesquecível de despedir-se da vista mais inspiradora de São Paulo antes do
-            renascimento magnífico do Arbórea Vista Jardim Europa.
+            renascimento magnífico do Vista Jardim Europa.
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
               <Button 
@@ -214,7 +214,7 @@ export default function Home() {
               </h2>
               <div className="w-24 h-px bg-gradient-to-r from-premium-gold to-premium-warm mb-8"></div>
               <p className="text-lg leading-relaxed opacity-90 mb-6">
-                Encante-se com a exposição de dois carros da Lamborghini no evento. Símbolos máximos que refletem o espírito inovador do Arbórea Vista Jardim Europa.
+                Encante-se com a exposição de dois carros da Lamborghini no evento. Símbolos máximos que refletem o espírito inovador do Vista Jardim Europa.
               </p>
               <p className="text-lg leading-relaxed opacity-90 mb-8">
                 Uma oportunidade única para apreciar de perto estas obras-primas da engenharia italiana, enquanto desfruta

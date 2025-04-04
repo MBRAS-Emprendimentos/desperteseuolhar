@@ -10,7 +10,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: 'Save The View',
-  description: 'Arbórea Vista Jardim Europa',
+  description: 'Vista Jardim Europa',
   generator: 'MBRAS',
 }
 

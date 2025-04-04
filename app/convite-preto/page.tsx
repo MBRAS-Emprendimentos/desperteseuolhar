@@ -105,7 +105,7 @@ const InvitationPage = () => {
             </p>
           </motion.div>
 
-          <motion.div 
+          {/* <motion.div 
             className="my-2 sm:my-3 flex justify-center items-center pt-14 md:pt-6"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
@@ -120,7 +120,7 @@ const InvitationPage = () => {
                 className="opacity-90 hover:opacity-100 transition-opacity duration-300"
               />
             </div>
-          </motion.div>
+          </motion.div> */}
 
           <div className="space-y-2 sm:space-y-3 my-1 sm:my-2  pt-14 md:pt-6">
             <motion.div 
