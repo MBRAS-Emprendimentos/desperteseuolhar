@@ -33,7 +33,7 @@ export default function ThankYouPage() {
           </div>
           <div className="flex items-center gap-3">
             <MapPin className="h-5 w-5 text-premium-gold flex-shrink-0" />
-            <span>Rua da Mata 25, Jardim Europa, São Paulo</span>
+            <span>Rua da Mata 25, São Paulo</span>
           </div>
         </div>
 
