@@ -57,11 +57,66 @@ export function RSVPForm() {
         "Accept": "application/json"
       }
     }).then(() => {
-      // Track form submission with Facebook Pixel
-      fbq.completeRegistration({
-        content_name: 'RSVP Submission',
-        status: 'confirmed'
-      });
+      // Get formatted phone for tracking
+      const formattedPhone = phoneMask.unformat(formState.phone);
+      
+      // Build lead event ID for deduplication
+      const leadEventId = `lead_${formState.email}_${Date.now()}`;
+      
+      // Track lead capture with Facebook Pixel (client + server side)
+      fbq.lead(
+        {
+          content_name: 'RSVP Event Lead',
+          content_category: 'Event Registration',
+          status: 'new_lead',
+          value: 0,
+          currency: 'BRL',
+          // Additional custom properties
+          form_name: 'RSVP Form',
+          event_name: 'Luxury Rooftop Event',
+          // Current page URL info
+          page_url: window.location.href,
+          page_title: document.title
+        },
+        // User data for server-side tracking
+        {
+          email: formState.email,
+          phone: formattedPhone,
+          firstName: formState.firstName,
+          lastName: formState.lastName,
+          // You can add these fields if you collect them in your form
+          city: 'São Paulo',  // Default or from form
+          state: 'SP',        // Default or from form
+          country: 'BR',      // Default to Brazil
+          // Generate a unique lead ID
+          leadId: leadEventId
+        }
+      );
+      
+      // Track registration completion
+      fbq.completeRegistration(
+        {
+          content_name: 'RSVP Submission',
+          content_category: 'Event Registration',
+          status: 'confirmed',
+          // Current page URL info
+          page_url: window.location.href,
+          page_title: document.title
+        },
+        // User data for server-side tracking
+        {
+          email: formState.email,
+          phone: formattedPhone,
+          firstName: formState.firstName,
+          lastName: formState.lastName,
+          // You can add these fields if you collect them in your form
+          city: 'São Paulo',  // Default or from form
+          state: 'SP',        // Default or from form
+          country: 'BR',      // Default to Brazil
+          // Generate a unique external ID
+          externalId: `rsvp_${formState.email}_${Date.now()}`
+        }
+      );
       
       // Redirect to thank you page
       window.location.href = "/obrigado";
