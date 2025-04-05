@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
 import {useMask, Mask} from '@react-input/mask'
+import * as fbq from '@/lib/facebook-pixel'
 
 export function RSVPForm() {
   const [formState, setFormState] = useState({
@@ -56,6 +57,13 @@ export function RSVPForm() {
         "Accept": "application/json"
       }
     }).then(() => {
+      // Track form submission with Facebook Pixel
+      fbq.completeRegistration({
+        content_name: 'RSVP Submission',
+        status: 'confirmed'
+      });
+      
+      // Redirect to thank you page
       window.location.href = "/obrigado";
     });
   };

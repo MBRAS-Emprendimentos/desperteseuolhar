@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import './globals.css'
+import FacebookPixel from '@/components/facebook-pixel'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -21,7 +22,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={montserrat.variable}>
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>
+        <FacebookPixel />
+        {children}
+      </body>
     </html>
   )
 }
