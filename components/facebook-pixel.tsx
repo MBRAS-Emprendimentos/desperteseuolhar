@@ -2,11 +2,12 @@
 
 import { usePathname, useSearchParams } from 'next/navigation'
 import Script from 'next/script'
-import { useEffect } from 'react'
+import { useEffect, Suspense } from 'react'
 
 import * as fbq from '@/lib/facebook-pixel'
 
-export default function FacebookPixel() {
+// Component that uses useSearchParams
+function FacebookPixelContent() {
   const pathname = usePathname()
   const searchParams = useSearchParams()
 
@@ -104,5 +105,14 @@ export default function FacebookPixel() {
         />
       </noscript>
     </>
+  )
+}
+
+// Main component with Suspense boundary
+export default function FacebookPixel() {
+  return (
+    <Suspense fallback={null}>
+      <FacebookPixelContent />
+    </Suspense>
   )
 }
