@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import './globals.css'
 import FacebookPixel from '@/components/facebook-pixel'
+import GoogleTagManager from '@/components/google-tag-manager'
+import { GTMProvider } from '@/contexts/gtm-context'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -22,9 +24,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={montserrat.variable}>
+      <head>
+        <GoogleTagManager />
+      </head>
       <body className={montserrat.className}>
-        <FacebookPixel />
-        {children}
+        <GTMProvider>
+          <FacebookPixel />
+          {children}
+        </GTMProvider>
       </body>
     </html>
   )

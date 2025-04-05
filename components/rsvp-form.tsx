@@ -8,8 +8,11 @@ import { Label } from "@/components/ui/label"
 import { Checkbox } from "@/components/ui/checkbox"
 import {useMask, Mask} from '@react-input/mask'
 import * as fbq from '@/lib/facebook-pixel'
+import { useGTM } from '@/contexts/gtm-context'
 
 export function RSVPForm() {
+  const { trackLead, trackFormSubmit } = useGTM();
+  
   const [formState, setFormState] = useState({
     firstName: "",
     lastName: "",
@@ -93,7 +96,7 @@ export function RSVPForm() {
         }
       );
       
-      // Track registration completion
+      // Track registration completion with Meta Pixel
       fbq.completeRegistration(
         {
           content_name: 'RSVP Submission',
@@ -117,6 +120,22 @@ export function RSVPForm() {
           externalId: `rsvp_${formState.email}_${Date.now()}`
         }
       );
+      
+      // Track lead with Google Tag Manager
+      trackLead('RSVP Form', {
+        formType: 'event_registration',
+        eventName: 'Luxury Rooftop Event',
+        userType: 'prospect',
+        categories: ['luxury', 'real-estate', 'event']
+      });
+      
+      // Track form submission with Google Tag Manager
+      trackFormSubmit('RSVP Form', {
+        formType: 'event_registration',
+        formLength: 4, // number of fields
+        formLocation: 'home_page',
+        successfulSubmission: true
+      });
       
       // Redirect to thank you page
       window.location.href = "/obrigado";

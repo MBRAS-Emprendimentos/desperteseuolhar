@@ -2,7 +2,14 @@
 
 A Next.js website for luxury rooftop events.
 
-## Meta Pixel Implementation
+## Analytics Implementations
+
+This project includes comprehensive analytics integrations with:
+
+1. Meta Pixel (Facebook Pixel) - Client & Server-side tracking
+2. Google Tag Manager (GTM) - For flexible tag management
+
+### Meta Pixel Implementation
 
 Meta Pixel has been implemented for tracking user behavior and conversions, with both client-side and server-side capabilities.
 
@@ -20,6 +27,9 @@ META_CONVERSION_API_ACCESS_TOKEN=your_meta_api_access_token_here
 
 # Optional: For test events in development
 META_TEST_EVENT_CODE=your_test_event_code
+
+# Google Tag Manager
+NEXT_PUBLIC_GTM_ID=your_gtm_container_id_here
 ```
 
 3. Restart the development server with `pnpm dev`
@@ -96,3 +106,62 @@ For more information on Meta Pixel events, see:
 - [Meta Pixel Documentation](https://developers.facebook.com/docs/meta-pixel)
 - [Conversion API Documentation](https://developers.facebook.com/docs/marketing-api/conversions-api)
 - [Standard Events Reference](https://developers.facebook.com/docs/meta-pixel/reference)
+
+### Google Tag Manager Implementation
+
+Google Tag Manager has been integrated to provide a flexible way to manage various tracking scripts and tags.
+
+#### Usage:
+
+GTM is loaded on all pages through the `GoogleTagManager` component in the root layout. Data layers are properly initialized and accessible throughout the application.
+
+#### Tracking Events with GTM:
+
+You can track events in two ways:
+
+1. **Direct method** - Import GTM utilities directly:
+
+```typescript
+import * as gtm from '@/lib/gtm'
+
+// Track a page view
+gtm.pageview('/some-page')
+
+// Track a custom event
+gtm.pushEvent({
+  event: 'custom_event',
+  category: 'user_engagement',
+  action: 'click',
+  label: 'sign_up_button'
+})
+```
+
+2. **Context method** - Use the React context for component-based access:
+
+```typescript
+import { useGTM } from '@/contexts/gtm-context'
+
+function MyComponent() {
+  const { pushEvent, trackLead, trackFormSubmit } = useGTM()
+  
+  const handleClick = () => {
+    pushEvent({
+      event: 'button_click',
+      buttonId: 'register_now'
+    })
+  }
+  
+  return <button onClick={handleClick}>Register Now</button>
+}
+```
+
+#### Helper Functions:
+
+- `pushEvent(data)`: Push custom events to dataLayer
+- `pageview(url)`: Track page views
+- `trackLead(formName, userData)`: Track lead generation events
+- `trackFormSubmit(formName, formData)`: Track form submissions
+
+For more information on Google Tag Manager, see:
+- [Google Tag Manager Documentation](https://developers.google.com/tag-manager/quickstart)
+- [Data Layer Documentation](https://developers.google.com/tag-manager/devguide)
