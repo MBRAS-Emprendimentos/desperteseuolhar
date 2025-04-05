@@ -4,6 +4,7 @@ import './globals.css'
 import FacebookPixel from '@/components/facebook-pixel'
 import GoogleTagManager from '@/components/google-tag-manager'
 import { GTMProvider } from '@/contexts/gtm-context'
+import { Suspense } from 'react'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -25,11 +26,15 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={montserrat.variable}>
       <head>
-        <GoogleTagManager />
+        <Suspense fallback={null}>
+          <GoogleTagManager />
+        </Suspense>
       </head>
       <body className={montserrat.className}>
         <GTMProvider>
-          <FacebookPixel />
+          <Suspense fallback={null}>
+            <FacebookPixel />
+          </Suspense>
           {children}
         </GTMProvider>
       </body>

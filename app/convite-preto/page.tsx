@@ -4,7 +4,10 @@ import { MapPin, Calendar } from 'lucide-react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import { Suspense } from 'react';
 
+// Import any components that use useSearchParams here
+// This ensures they are wrapped in Suspense
 
 const InvitationPage = () => {
   const [isHovered, setIsHovered] = useState(false);
