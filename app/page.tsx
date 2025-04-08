@@ -125,7 +125,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-8 relative">
           <div className="max-w-3xl mx-auto bg-premium-navy-deep/70 p-8 md:p-12 border border-premium-gold/30 backdrop-blur-sm">
             <h2 className="text-3xl md:text-4xl font-extralight text-center tracking-wide mb-3">
-              CONFIRME SUA <span className="text-transparent bg-gradient-to-r from-premium-gold to-premium-warm bg-clip-text font-normal">PRESENÇA</span>
+              ENTRE NA <span className="text-transparent bg-gradient-to-r from-premium-gold to-premium-warm bg-clip-text font-normal">LISTA DE ESPERA</span>
             </h2>
             <div className="w-24 h-px bg-gradient-to-r from-premium-gold to-premium-warm mx-auto mb-8"></div>
             <p className="text-center text-lg mb-10 font-extralight leading-relaxed">

@@ -10,12 +10,11 @@ export default function ThankYouPage() {
         <CheckCircle className="h-16 w-16 text-premium-gold mx-auto mb-6" />
         
         <h1 className="text-4xl font-extralight tracking-wide mb-4">
-          OBRIGADO POR <span className="text-transparent bg-gradient-to-r from-premium-gold to-premium-light bg-clip-text font-normal">CONFIRMAR!</span>
+          OBRIGADO POR ENTRAR NA <span className="text-transparent bg-gradient-to-r from-premium-gold to-premium-light bg-clip-text font-normal">LISTA DE ESPERA!</span>
         </h1>
         
         <p className="text-lg opacity-90 mb-10">
-          Sua presença foi registrada com sucesso para o evento "Save The View".
-          Estamos ansiosos para recebê-lo nesta experiência exclusiva.
+          Você foi adicionado(a) com sucesso à nossa lista de espera para o evento "Save The View".
         </p>
 
         <div className="w-full h-px bg-gradient-to-r from-premium-gold/30 via-premium-gold/80 to-premium-gold/30 my-10"></div>
@@ -29,12 +28,12 @@ export default function ThankYouPage() {
           </div>
           <div className="flex items-center gap-3">
             <Clock className="h-5 w-5 text-premium-gold flex-shrink-0" />
-            <span>A partir das 18:30</span>
+            <span>A partir das 19:00</span>
           </div>
-          <div className="flex items-center gap-3">
+          {/* <div className="flex items-center gap-3">
             <MapPin className="h-5 w-5 text-premium-gold flex-shrink-0" />
             <span>Rua da Mata 25, São Paulo</span>
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-12 space-y-4">
@@ -52,7 +51,7 @@ export default function ThankYouPage() {
         </div>
 
         <p className="text-xs text-premium-light/60 mt-10">
-          Você receberá um e-mail de confirmação em breve. Caso tenha alguma dúvida, entre em contato.
+          Entraremos em contato em caso de disponibilidade. Caso tenha alguma dúvida, entre em contato conosco.
         </p>
       </div>
     </main>
