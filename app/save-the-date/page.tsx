@@ -42,7 +42,7 @@ const InvitationPage = () => {
           <div className="relative h-16 w-full">
             <Image
               src="/images/arborea-jardimeuropa.png"
-              alt="Arbórea Vista Jardim Europa"
+              alt="Arbórea Arbórea Vista Jardim Europa"
               fill
               style={{ objectFit: 'contain' }}
               priority

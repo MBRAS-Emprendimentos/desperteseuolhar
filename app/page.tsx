@@ -87,7 +87,7 @@ export default function Home() {
             <div className="h-px w-24 bg-gradient-to-r from-premium-gold to-premium-warm mb-8"></div>
             <p className="text-lg md:text-xl opacity-90 mb-10 font-extralight leading-relaxed max-w-xl">
             Participe da experiência inesquecível de despedir-se da vista mais inspiradora de São Paulo antes do
-            renascimento magnífico do Vista Jardim Europa.
+            renascimento magnífico do Arbórea Vista Jardim Europa.
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
               <Button 

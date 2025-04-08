@@ -84,7 +84,7 @@ export default function Home() {
             <div className="h-px w-24 bg-gradient-to-r from-premium-gold to-premium-warm mb-8"></div>
             <p className="text-lg md:text-xl opacity-90 mb-10 font-extralight leading-relaxed max-w-xl">
             Participe da experiência inesquecível de despedir-se da vista mais inspiradora de São Paulo antes do
-            renascimento magnífico do Vista Jardim Europa.
+            renascimento magnífico do Arbórea Vista Jardim Europa.
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
               <Button 
@@ -122,7 +122,7 @@ export default function Home() {
               <div className="w-24 h-px bg-gradient-to-r from-premium-gold to-premium-light mb-10"></div>
               <p className="text-lg opacity-90 mb-8 leading-relaxed font-extralight">
                 Participe de uma experiência inesquecível ao despedir-se da vista mais inspiradora de São Paulo antes do
-                renascimento magnífico do Arbórea Vista Jardim Europa. Uma colaboração exclusiva entre MBRAS, Lamborghini São Paulo e
+                renascimento magnífico do Arbórea Arbórea Vista Jardim Europa. Uma colaboração exclusiva entre MBRAS, Lamborghini São Paulo e
                 Benx proporciona uma noite singular que combina sofisticação, emoção e elegância, homenageando o passado
                 e abrindo caminho para um futuro ainda mais grandioso.
               </p>
@@ -214,7 +214,7 @@ export default function Home() {
               </h2>
               <div className="w-24 h-px bg-gradient-to-r from-premium-gold to-premium-warm mb-8"></div>
               <p className="text-lg leading-relaxed opacity-90 mb-6">
-                Encante-se com a exposição de dois carros da Lamborghini no evento. Símbolos máximos que refletem o espírito inovador do Vista Jardim Europa.
+                Encante-se com a exposição de dois carros da Lamborghini no evento. Símbolos máximos que refletem o espírito inovador do Arbórea Vista Jardim Europa.
               </p>
               <p className="text-lg leading-relaxed opacity-90 mb-8">
                 Uma oportunidade única para apreciar de perto estas obras-primas da engenharia italiana, enquanto desfruta
@@ -274,7 +274,7 @@ export default function Home() {
               <div className="h-6 w-px bg-gradient-to-b from-premium-light to-premium-gold opacity-70" />
               <span className="text-lg font-extralight tracking-[0.15em]">
                 <span className="md:hidden">ARBÓREA</span>
-                <span className="hidden md:inline">ARBÓREA VISTA JARDIM EUROPA</span>
+                <span className="hidden md:inline">ARBÓREA Arbórea Vista Jardim Europa</span>
               </span>
             </div>
 
